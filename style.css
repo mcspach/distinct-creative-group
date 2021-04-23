@@ -25,7 +25,6 @@ div.full {
 
 div.services {
     height: 270vh;
-    /* margin: 40vh auto; */
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -41,7 +40,10 @@ div.services_section {
     width: 90%;
     height: 200vh;
     padding: 5%;
-    background-color:lightgrey;
+    background-image: url("images/test_image.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
