@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Tungsten Bold';
+    src: url('fonts/Tungsten-Bold.woff2') format('woff2'),
+        url('fonts/Tungsten-Bold.woff') format('woff'),
+        url('fonts/Tungsten-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten Black';
+    src: url('fonts/Tungsten-Black.woff2') format('woff2'),
+        url('fonts/Tungsten-Black.woff') format('woff'),
+        url('fonts/Tungsten-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten Light';
+    src: url('fonts/Tungsten-Light.woff2') format('woff2'),
+        url('fonts/Tungsten-Light.woff') format('woff'),
+        url('fonts/Tungsten-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten Extra';
+    src: url('fonts/Tungsten-ExtraLight.woff2') format('woff2'),
+        url('fonts/Tungsten-ExtraLight.woff') format('woff'),
+        url('fonts/Tungsten-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten Thin';
+    src: url('fonts/Tungsten-Thin.woff2') format('woff2'),
+        url('fonts/Tungsten-Thin.woff') format('woff'),
+        url('fonts/Tungsten-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten Book';
+    src: url('fonts/Tungsten-Book.woff2') format('woff2'),
+        url('fonts/Tungsten-Book.woff') format('woff'),
+        url('fonts/Tungsten-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten Semibold';
+    src: url('fonts/Tungsten-Semibold.woff2') format('woff2'),
+        url('fonts/Tungsten-Semibold.woff') format('woff'),
+        url('fonts/Tungsten-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten Medium';
+    src: url('fonts/Tungsten-Medium.woff2') format('woff2'),
+        url('fonts/Tungsten-Medium.woff') format('woff'),
+        url('fonts/Tungsten-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+  font-family: 'Tungsten Extra', sans-serif;
+  font-size: 9rem;
+}
+
+p {
+    font-family: 'Tungsten Semibold', sans-serif;
+    font-size: 1.2rem;
+}
+
