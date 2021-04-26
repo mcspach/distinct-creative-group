@@ -17,6 +17,33 @@ div.full {
     align-items: center;
 }
 
+#call_button {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 4px;
+    font-size: 20px;
+    height: 80px;
+    width: 96px;
+    background-color: white;
+    border: 6px solid black;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+#call_button>h2 {
+    margin: 0;
+    line-height: 1;
+}
+#call_button>h5 {
+    font-family: 'Tungsten Extra';
+    font-size: 24px;
+    margin: 0;
+}
+
 .hero {
 }
 .hero>svg {
@@ -64,6 +91,9 @@ div.service_card {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
+}
+div.service_blurb>p {
+    font-family: 'Tungsten Extra';
 }
 div.service_img {
     width: 100px;
