@@ -4,6 +4,12 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: 'Tungsten Medium';
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 /* custom global elements */
@@ -33,6 +39,7 @@ div.full {
     position: fixed;
     right: 0;
     top: 0;
+    box-shadow: -6px -6px 0px 0px grey;
 }
 #call_button>h2 {
     margin: 0;
@@ -65,7 +72,7 @@ div.services_title {
 
 div.services_section {
     width: 90%;
-    height: 200vh;
+    height: 190vh;
     padding: 5%;
     background-image: url("images/test_image.jpg");
     background-size: cover;
@@ -91,6 +98,8 @@ div.service_card {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
+    box-shadow: -16px -16px 0px 0px grey;
+    margin: 5%;
 }
 div.service_blurb>p {
     font-family: 'Tungsten Extra';
@@ -110,4 +119,73 @@ div.footer {
     height: 50vh;
     max-height: 1000px;
     background-color: black;
+    color: white;
+    text-align: left;
+    line-height: 400%;
+}
+
+.footer>a {
+    margin-left: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div.footer img {
+    width: 16vw;
+    height: 16vw;
+    margin-right: 5%;
+    box-shadow: 12px 12px 0px 0px grey;
+}
+
+
+@media screen and (max-width: 1050px) {
+    div.services_row {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    div.services {
+        height: 200vh;
+    }
+    div.services_section {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    div.services_row {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    div.services {
+        height: 450vh;
+    }
+    div.services_section {
+        height: fit-content;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    div.footer {
+        height: 100vh;
+        max-height: 1000px;
+        background-color: black;
+        color: white;
+        text-align: left;
+        line-height: 400%;
+    }
+    .footer>a {
+        margin-left: 10%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    div.footer img {
+        width: 25vw;
+        height: 25vw;
+        margin-bottom: 30%;
+        box-shadow: 12px 12px 0px 0px grey;
+    }
+
 }
