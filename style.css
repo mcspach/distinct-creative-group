@@ -34,12 +34,14 @@ div.full {
     height: 80px;
     width: 96px;
     background-color: white;
-    border: 6px solid black;
+    border: none;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
     text-align: center;
     position: fixed;
     right: 0;
     top: 0;
-    box-shadow: -6px -6px 0px 0px grey;
+    box-shadow: 8px 8px 0px 0px grey;
 }
 #call_button>h2 {
     margin: 0;
@@ -51,6 +53,10 @@ div.full {
     margin: 0;
 }
 
+#call_button:hover {
+    transform: scale(1.02);
+}
+
 .hero {
 }
 .hero>svg {
@@ -58,7 +64,7 @@ div.full {
 }
 
 div.services {
-    height: 270vh;
+    height: fit-content;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -74,9 +80,10 @@ div.services_section {
     width: 90%;
     height: 190vh;
     padding: 5%;
-    background-image: url("images/test_image.jpg");
+    /* background-image: url("images/test_image.jpg"); */
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lovethispic.com%2Fuploaded_images%2F141604-Black-And-White-Patterned-Girl.jpg%3F1&f=1&nofb=1");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -111,12 +118,31 @@ div.service_img {
     border-radius: 50%;
 }
 
-.video_section {
+div.video_section {
+    height: fit-content;
+    flex-flow: column nowrap;
+}
+div.video_section h1 {
+    font-family: 'Tungsten Thin';
+    margin: 0;
+    line-height: 80%;
+}
+div.video_section h1.bold {
+    font-family: 'Tungsten Bold';
+}
+div.title_flex {
+    display: flex;
+}
 
+div.fake_vid {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
 }
 
 div.footer {
-    height: 50vh;
+    height: 75vh;
     max-height: 1000px;
     background-color: black;
     color: white;
@@ -136,6 +162,10 @@ div.footer img {
     margin-right: 5%;
     box-shadow: 12px 12px 0px 0px grey;
 }
+div.footer img:hover {
+    transform: scale(1.02);
+    box-shadow: 14px 14px 0px 0px rgb(172, 172, 172);
+}
 
 
 @media screen and (max-width: 1050px) {
@@ -144,7 +174,7 @@ div.footer img {
         justify-content: space-evenly;
     }
     div.services {
-        height: 200vh;
+        height: fit-content;
     }
     div.services_section {
         height: fit-content;
@@ -156,23 +186,13 @@ div.footer img {
         flex-flow: column nowrap;
         align-items: center;
     }
-    div.services {
-        height: 450vh;
-    }
-    div.services_section {
-        height: fit-content;
-    }
 
     h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     div.footer {
         height: 100vh;
-        max-height: 1000px;
-        background-color: black;
-        color: white;
-        text-align: left;
         line-height: 400%;
     }
     .footer>a {
@@ -180,12 +200,19 @@ div.footer img {
         display: flex;
         flex-flow: column nowrap;
     }
+
+    div.fake_vid {
+        height: 50vh;
+    }
     
     div.footer img {
         width: 25vw;
         height: 25vw;
         margin-bottom: 30%;
         box-shadow: 12px 12px 0px 0px grey;
+    }
+    div.title_flex {
+        display: block;
     }
 
 }
