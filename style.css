@@ -80,9 +80,10 @@ div.services_section {
     width: 90%;
     height: 190vh;
     padding: 5%;
-    background-image: url("images/test_image.jpg");
+    /* background-image: url("images/test_image.jpg"); */
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lovethispic.com%2Fuploaded_images%2F141604-Black-And-White-Patterned-Girl.jpg%3F1&f=1&nofb=1");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -141,7 +142,7 @@ div.fake_vid {
 }
 
 div.footer {
-    height: 50vh;
+    height: 75vh;
     max-height: 1000px;
     background-color: black;
     color: white;
@@ -192,16 +193,16 @@ div.footer img:hover {
 
     div.footer {
         height: 100vh;
-        max-height: 1000px;
-        background-color: black;
-        color: white;
-        text-align: left;
         line-height: 400%;
     }
     .footer>a {
         margin-left: 10%;
         display: flex;
         flex-flow: column nowrap;
+    }
+
+    div.fake_vid {
+        height: 50vh;
     }
     
     div.footer img {
