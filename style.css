@@ -43,6 +43,7 @@ div.full {
     right: 0;
     top: 0;
     box-shadow: 12px -12px 0px 0px grey;
+    animation: 2s ease-out 0s 1 slideInFromRight;
 }
 #call_button>h2 {
     margin: 0;
@@ -61,7 +62,7 @@ div.full {
 .hero {
 }
 .hero>svg {
-    width: 90%;
+    width: 75%;
 }
 
 div.services {
@@ -108,6 +109,7 @@ div.service_card {
     justify-content: space-around;
     box-shadow: -16px -16px 0px 0px grey;
     margin: 5%;
+    animation: 1s ease-out 0s 1 shadowDrop;
 }
 div.service_blurb>p {
     font-family: 'Tungsten Extra';
@@ -175,6 +177,9 @@ div.footer img:hover {
 
 
 @media screen and (max-width: 1050px) {
+    .hero>svg {
+        width: 94%;
+    }
     div.services_row {
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -216,5 +221,25 @@ div.footer img:hover {
         height: 25vw;
         margin-bottom: 30%;
         box-shadow: 12px 12px 0px 0px grey;
+    }
+}
+
+/* animations */
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes shadowDrop {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: -16px -16px 0px 0px grey;
     }
 }

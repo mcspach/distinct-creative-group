@@ -1,7 +1,7 @@
 //autoplay function on scroll for video
 
 var videos = document.getElementsByTagName("video"),
-fraction = 0.8;
+fraction = 0.5;
 function checkScroll() {
 
     for(var i = 0; i < videos.length; i++) {
@@ -29,4 +29,3 @@ function checkScroll() {
 
 window.addEventListener('scroll', checkScroll, false);
 window.addEventListener('resize', checkScroll, false);
-
