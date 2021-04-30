@@ -1,0 +1,19 @@
+/* animations */
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes shadowDrop {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: -16px -16px 0px 0px grey;
+    }
+}
