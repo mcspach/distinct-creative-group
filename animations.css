@@ -28,5 +28,5 @@
 }
 
 @keyframes stretchAnimation {
-  to { letter-spacing: .2em; }
+  to { letter-spacing: .16em; }
 }
