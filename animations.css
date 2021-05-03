@@ -1,4 +1,5 @@
 /* animations */
+/* slidein animation for button etc */
 
 @keyframes slideInFromRight {
     0% {
@@ -9,6 +10,8 @@
     }
   }
 
+/* drop-shadow on cards */
+
 @keyframes shadowDrop {
     0% {
         box-shadow: none;
@@ -16,4 +19,14 @@
     100% {
         box-shadow: -16px -16px 0px 0px grey;
     }
+}
+
+/* title stretching classes and animation */
+
+.stretching {
+  animation: stretchAnimation 2.5s ease .2s forwards;
+}
+
+@keyframes stretchAnimation {
+  to { letter-spacing: .2em; }
 }
