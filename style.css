@@ -201,6 +201,7 @@ div.footer img:hover {
     div.title_flex {
         flex-flow: column nowrap;
         justify-content: center;
+        transition: 1000;
     }
 }
 
