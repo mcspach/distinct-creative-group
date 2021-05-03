@@ -2,7 +2,7 @@
 
 @keyframes slideInFromRight {
     0% {
-      transform: translateX(100px);
+      transform: translateX(300px);
     }
     100% {
       transform: translateX(0);
