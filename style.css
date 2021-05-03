@@ -14,7 +14,7 @@ a {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 /* custom global elements */
@@ -48,6 +48,7 @@ div.full {
     top: 0;
     box-shadow: 12px -12px 0px 0px grey;
     animation: 2s ease-out 0s 1 slideInFromRight;
+    transition: .4s;
 }
 #call_button>h2 {
     margin: 0;
@@ -61,13 +62,57 @@ div.full {
 
 #call_button:hover {
     transform: scale(1.02);
+    box-shadow: 14px -14px 0 0 lightgrey; 
 }
 
-.hero {
-}
 .hero>svg {
     width: 50%;
 }
+
+div.tagline {
+    overflow: hidden;
+    height: fit-content;
+    width: 100vw;
+    padding: 1%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    letter-spacing: -2em;
+}
+div.tagline>h1 {
+    font-family: 'Tungsten Bold';
+    background-color: black;
+    color: lightgrey;
+    padding: 2%;
+    margin: 2%;
+    transform: translateX(-200px);
+}
+div.tagline>h2 {
+    font-family: 'Tungsten Light';
+    font-size: 1.4rem;
+    padding: 2%;
+    margin: 2%;
+    transform: translateX(-200px);
+    border: 2px solid black;
+}
+div.tagline>h3 {
+    font-family: 'Tungsten Semibold';
+    font-size: 1.4rem;
+    padding: 2%;
+    margin: 2%;
+    background-color: black;
+    color: lightgrey;
+    transform: translateX(-200px);
+}
+
+div.why {
+    margin: 5vw;
+    width: 90vw;
+    background-image: linear-gradient(rgb(244, 242, 242), rgb(216, 216, 216));
+}
+
 
 div.services {
     height: fit-content;
@@ -86,7 +131,6 @@ div.services_section {
     width: 90%;
     height: 190vh;
     padding: 5%;
-    /* background-image: url("images/test_image.jpg"); */
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lovethispic.com%2Fuploaded_images%2F141604-Black-And-White-Patterned-Girl.jpg%3F1&f=1&nofb=1");
     background-size: cover;
     background-position: center;
@@ -180,6 +224,7 @@ div.footer img {
     height: 16vw;
     margin-right: 5%;
     box-shadow: 12px 12px 0px 0px grey;
+    transition: 0.4s;
 }
 div.footer img:hover {
     transform: scale(1.02);
@@ -189,10 +234,10 @@ div.footer img:hover {
 
 @media screen and (max-width: 1200px) {
     h1 {
-        font-sizing: 5rem;
+        font-sizing: 2.5rem;
     }
     .hero>svg {
-        width: 94%;
+        width: 75%;
     }
     div.services_row {
         flex-flow: row wrap;
@@ -219,7 +264,16 @@ div.footer img:hover {
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 2rem;
+    }
+    .hero>svg {
+        width: 90%;
+    }
+    div.tagline>h3 {
+        font-size: .9rem;
+    }
+    div.tagline>h2 {
+        font-size: .7rem;
     }
 
     div.footer {
