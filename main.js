@@ -53,7 +53,6 @@ function checkScrollTitle() {
             visible = visibleX * visibleY / (w * h);
 
             if (visible > fraction) {
-                console.log("it should be stretching now");
                 title.classList.add("stretching");
             }
     }
@@ -62,7 +61,7 @@ function checkScrollTitle() {
 window.addEventListener('scroll', checkScrollTitle, false);
 window.addEventListener('resize', checkScrollTitle, false);
 
-// second animation fro titles
+// second animation for titles
 
 var titles2 = document.querySelectorAll(".stretch2");
 fraction = .6;
@@ -82,7 +81,6 @@ function checkScrollTitle2() {
             visible = visibleX * visibleY / (w * h);
 
             if (visible > fraction) {
-                console.log("it should be stretching now");
                 title.classList.add("stretching_bg");
             }
     }
