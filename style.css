@@ -29,6 +29,7 @@ div.full {
 }
 
 #call_button {
+    z-index: 100;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -70,6 +71,7 @@ div.full {
 }
 
 div.tagline {
+    z-index: 1;
     overflow: hidden;
     height: fit-content;
     width: 100vw;
@@ -86,22 +88,25 @@ div.tagline>h1 {
     background-color: black;
     color: lightgrey;
     padding: 2%;
-    margin: 2%;
+    padding-right: 150%;
+    margin: 1% 0 1% 3%;
     transform: translateX(-200px);
 }
 div.tagline>h2 {
     font-family: 'Tungsten Light';
     font-size: 1.4rem;
     padding: 2%;
-    margin: 2%;
-    transform: translateX(-200px);
+    margin: 10% auto;
     border: 2px solid black;
+    text-align: center;
+    letter-spacing: 0em;
 }
 div.tagline>h3 {
     font-family: 'Tungsten Semibold';
     font-size: 1.4rem;
     padding: 2%;
-    margin: 2%;
+    padding-right: 150%;
+    margin: 1% 0 1% 3%;
     background-color: black;
     color: lightgrey;
     transform: translateX(-200px);
@@ -110,7 +115,62 @@ div.tagline>h3 {
 div.why {
     margin: 5vw;
     width: 90vw;
+    min-height: 90vh;
     background-image: linear-gradient(rgb(244, 242, 242), rgb(216, 216, 216));
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;       
+}
+div.why_title {
+    align-self:flex-end;
+    text-align: right;
+    letter-spacing: 0em;
+}
+div.why_middle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+div.why_middle div {
+    font-family: "Tungsten Bold";
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+}
+div.why p {
+    font-family: "Tungsten Medium";
+    padding: 2%;
+    font-size: 24px;
+    text-align: left;
+    letter-spacing: 0em;
+    border-left: 2px solid black;
+}
+div.experience_container {
+    width: 96%;
+    margin: 0 5vw;
+    padding: 2%;
+    background-color: black;
+}
+div.experience_container p {
+    text-align: center;
+    border: none;
+    color: white;
+}
+div.experience_list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+div.why img {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50px;
 }
 
 
@@ -234,10 +294,20 @@ div.footer img:hover {
 
 @media screen and (max-width: 1200px) {
     h1 {
-        font-sizing: 2.5rem;
+        font-size: 2.5rem;
     }
     .hero>svg {
         width: 75%;
+    }
+    div.why_middle div {
+        font-size: 24px;
+    }
+    div.why img {
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        border-radius: 25px;
+        margin: 2%;
     }
     div.services_row {
         flex-flow: row wrap;
