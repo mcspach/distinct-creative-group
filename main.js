@@ -92,7 +92,7 @@ window.addEventListener('resize', checkScrollTitle2, false);
 // animation for shadows on cards
 
 var cards = document.querySelectorAll(".pop_shadow");
-fraction = .6;
+fraction = .2;
 function checkScrollCard() {
 
     for(var i = 0; i < cards.length; i++) {

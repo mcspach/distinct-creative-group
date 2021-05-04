@@ -13,7 +13,7 @@
 /* drop-shadow on cards */
 
 .dropping {
-  animation: shadowDrop 2s ease .1s forwards;
+  animation: shadowDrop 2s ease-out forwards;
 }
 
 @keyframes shadowDrop {
