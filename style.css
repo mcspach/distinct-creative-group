@@ -119,7 +119,7 @@ div.why_middle {
     width: 100%;
 }
 div.why_middle>p {
-    box-shadow: 220px -160px 0px 110px lightgrey;
+    box-shadow: 220px -160px 0px 110px rgb(145, 145, 145);
 }
 div.why_middle div {
     font-family: "Tungsten Thin";
@@ -127,7 +127,6 @@ div.why_middle div {
     color: white;
     background-color: black;
     width: 50%;
-    height: 100%;
 }
 div.why p {
     font-family: "Tungsten Light";
