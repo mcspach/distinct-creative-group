@@ -67,7 +67,7 @@ div.full {
 }
 
 .hero>svg {
-    width: 50%;
+    width: 45%;
 }
 
 div.tagline {
@@ -133,6 +133,9 @@ div.why_middle {
     width: 100%;
     height: fit-content;
 }
+div.why_middle>p {
+    box-shadow: 200px -120px 0px 60px lightgrey;
+}
 div.why_middle div {
     font-family: "Tungsten Bold";
     font-size: 30px;
@@ -171,6 +174,7 @@ div.why img {
     width: 100px;
     background-color: white;
     border-radius: 50px;
+    margin: 0 5%;
 }
 
 
@@ -182,7 +186,7 @@ div.services {
 }
 
 div.services_title {
-    margin: 20vh 0;
+    margin: 16vh 0 8vh 0;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
@@ -205,7 +209,7 @@ div.services_row {
     height: fit-content;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 div.service_card {
     width: 300px;
@@ -214,20 +218,23 @@ div.service_card {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-around;
-    box-shadow: -20px -20px 0px 0px grey;
+    justify-content: space-between;
     margin: 4%;
     padding: 1.5%;
-    animation: 1s ease-out 0s 1 shadowDrop;
+    transform: translateY(20vh);
 }
 div.service_card>p {
     font-family: 'Tungsten Semibold';
     letter-spacing: .07em;
     font-size: 1.5rem;
 }
+div.service_card>p strong {
+    font-size: 2.2rem;
+}
 div.service_blurb>p {
     font-family: 'Tungsten Light';
     letter-spacing: .04em;
+    margin: 4%;
 }
 div.service_img {
     width: 100px;
@@ -235,6 +242,17 @@ div.service_img {
     background-color: darkgrey;
     border-radius: 50%;
 }
+
+
+div.options {
+    flex-flow: row wrap;
+    height: fit-content;
+}
+div.options div.services_row {
+    background-image: linear-gradient(black, rgb(109, 109, 109));
+    width: 98%;
+}
+
 
 div.video_section {
     height: fit-content;
@@ -292,15 +310,15 @@ div.footer img:hover {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     h1 {
         font-size: 2.5rem;
     }
     .hero>svg {
-        width: 75%;
+        width: 65%;
     }
     div.why_middle div {
-        font-size: 24px;
+        font-size: 18px;
     }
     div.why img {
         height: 50px;
@@ -344,6 +362,9 @@ div.footer img:hover {
     }
     div.tagline>h2 {
         font-size: .7rem;
+    }
+    div.experience_container p {
+        font-size: 18px;
     }
 
     div.footer {
