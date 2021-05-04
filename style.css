@@ -162,8 +162,8 @@ div.experience_container p {
 }
 div.experience_list {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
 }
 div.why img {
