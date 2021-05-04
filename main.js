@@ -36,7 +36,7 @@ window.addEventListener('resize', checkScroll, false);
 
 
 var titles = document.querySelectorAll(".stretch");
-fraction = .6;
+fraction = .8;
 function checkScrollTitle() {
 
     for(var i = 0; i < titles.length; i++) {
@@ -90,4 +90,32 @@ function checkScrollTitle2() {
 
 window.addEventListener('scroll', checkScrollTitle2, false);
 window.addEventListener('resize', checkScrollTitle2, false);
+
+// animation for shadows on cards
+
+var cards = document.querySelectorAll(".pop_shadow");
+fraction = .6;
+function checkScrollCard() {
+
+    for(var i = 0; i < cards.length; i++) {
+
+        var card = cards[i];
+
+        var x = card.offsetLeft, y = card.offsetTop, w = card.offsetWidth, h = card.offsetHeight, r = x + w, //right
+            b = y + h, //bottom
+            visibleX, visibleY, visible;
+
+            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+            visible = visibleX * visibleY / (w * h);
+
+            if (visible > fraction) {
+                card.classList.add("dropping");
+            }
+    }
+}
+
+window.addEventListener('scroll', checkScrollCard, false);
+window.addEventListener('resize', checkScrollCard, false);
 
