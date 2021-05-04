@@ -85,10 +85,10 @@ div.tagline {
 }
 div.tagline>h1 {
     font-family: 'Tungsten Bold';
-    font-size: 9rem;
+    font-size: 8rem;
     letter-spacing: .8rem;
     color: lightgrey;
-    line-height: 8rem;
+    line-height: 7rem;
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
 }
@@ -206,7 +206,7 @@ div.service_card {
     align-items: center;
     justify-content: space-between;
     margin: 4%;
-    padding: 1.5%;
+    padding: 1% 2% 10% 2%;
     transform: translateY(20vh);
 }
 div.service_card>p {
@@ -259,6 +259,7 @@ div.video_section h1 {
 }
 div.video_section h1.bold {
     font-family: 'Tungsten Bold';
+    color: rgb(145, 145, 145);
 }
 div.title_flex {
     display: flex;
@@ -312,9 +313,9 @@ div.footer img:hover {
         width: 65%;
     }
     div.tagline>h1 {
-        font-size: 5rem;
+        font-size: 5.5rem;
         letter-spacing: .6rem;
-        line-height: 5rem;
+        line-height: 4.8rem;
     }
     div.why_middle div {
         font-size: 18px;
