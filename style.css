@@ -71,85 +71,69 @@ div.full {
 }
 
 div.tagline {
-    z-index: 1;
-    overflow: hidden;
+    min-height: 90vh;
     height: fit-content;
-    width: 100vw;
-    padding: 1%;
+    max-width: 100vw;
+    background-color: black;
+    padding: 0 10% 4% 10%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     text-align: left;
-    letter-spacing: -2em;
+    box-sizing: border-box;
 }
 div.tagline>h1 {
     font-family: 'Tungsten Bold';
-    background-color: black;
+    font-size: 9rem;
+    letter-spacing: .8rem;
     color: lightgrey;
-    padding: 2%;
-    padding-right: 150%;
-    margin: 1% 0 1% 3%;
-    transform: translateX(-200px);
+    line-height: 8rem;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
 }
 div.tagline>h2 {
     font-family: 'Tungsten Light';
-    font-size: 1.4rem;
-    padding: 2%;
-    margin: 10% auto;
-    border: 2px solid black;
-    text-align: center;
-    letter-spacing: 0em;
-}
-div.tagline>h3 {
-    font-family: 'Tungsten Semibold';
-    font-size: 1.4rem;
-    padding: 2%;
-    padding-right: 150%;
-    margin: 1% 0 1% 3%;
-    background-color: black;
-    color: lightgrey;
-    transform: translateX(-200px);
+    font-size: 1.3rem;
+    letter-spacing: .4rem;
+    color: white;
 }
 
 div.why {
     margin: 5vw;
     width: 90vw;
     min-height: 90vh;
-    background-image: linear-gradient(rgb(244, 242, 242), rgb(216, 216, 216));
+    background-image: linear-gradient(rgb(244, 242, 242), rgb(177, 177, 177));
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-between;       
 }
-div.why_title {
-    align-self:flex-end;
-    text-align: right;
+div.why_title>h1 {
+    font-family: "Tungsten Bold";
     letter-spacing: 0em;
 }
 div.why_middle {
     display: flex;
     align-items: center;
     width: 100%;
-    height: fit-content;
 }
 div.why_middle>p {
-    box-shadow: 220px -160px 0px 110px lightgrey;
+    box-shadow: 220px -160px 0px 110px rgb(145, 145, 145);
 }
 div.why_middle div {
-    font-family: "Tungsten Bold";
+    font-family: "Tungsten Thin";
     font-size: 30px;
     color: white;
     background-color: black;
     width: 50%;
-    height: 100%;
 }
 div.why p {
-    font-family: "Tungsten Medium";
+    font-family: "Tungsten Light";
     padding: 2%;
-    font-size: 24px;
+    font-size: 1.8rem;
     text-align: left;
-    letter-spacing: 0em;
+    letter-spacing: 0.2rem;
     border-left: 2px solid black;
 }
 div.experience_container {
@@ -159,6 +143,7 @@ div.experience_container {
     background-color: black;
 }
 div.experience_container p {
+    font-size: 1.3rem;
     text-align: center;
     border: none;
     color: white;
@@ -226,8 +211,8 @@ div.service_card {
 }
 div.service_card>p {
     font-family: 'Tungsten Bold';
-    letter-spacing: .07em;
-    font-size: 1.1rem;
+    letter-spacing: .05em;
+    font-size: 2rem;
 }
 div.service_card>p strong {
     font-size: 2.2rem;
@@ -235,13 +220,12 @@ div.service_card>p strong {
 }
 div.service_blurb>p {
     font-family: 'Tungsten Light';
-    letter-spacing: .04em;
+    letter-spacing: .05em;
     margin: 4%;
 }
-div.service_img {
+div.service_card>img {
     width: 100px;
     height: 100px;
-    background-color: darkgrey;
     border-radius: 50%;
 }
 
@@ -252,8 +236,15 @@ div.options {
 }
 div.options div.services_row {
     padding-top: 4vh;
-    background-image: linear-gradient(black, rgb(109, 109, 109));
-    width: 98%;
+}
+div.options div.service_card {
+    color: white;
+    background-color: black;
+}
+div.options div.service_card>p {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
 }
 
 
@@ -320,6 +311,11 @@ div.footer img:hover {
     .hero>svg {
         width: 65%;
     }
+    div.tagline>h1 {
+        font-size: 5rem;
+        letter-spacing: .6rem;
+        line-height: 5rem;
+    }
     div.why_middle div {
         font-size: 18px;
     }
@@ -360,14 +356,20 @@ div.footer img:hover {
     .hero>svg {
         width: 90%;
     }
-    div.tagline>h3 {
-        font-size: .9rem;
+    div.tagline>h1 {
+        font-size: 3.5rem;
+        letter-spacing: .5rem;
+        line-height: 4rem;
     }
     div.tagline>h2 {
-        font-size: .7rem;
+        font-size: .8rem;
+        letter-spacing: .3rem;
+    }
+    div.why_middle>p {
+        box-shadow: 180px -120px 0px 60px lightgrey;
     }
     div.experience_container p {
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     div.footer {
