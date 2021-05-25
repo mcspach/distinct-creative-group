@@ -169,7 +169,6 @@ div.services {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    background-color: lightgray;
 }
 div.services_title {
     margin: 5% 0 5% 0;
@@ -235,17 +234,23 @@ div.service_card img {
     border-radius: 50%;
 }
 
+img.astronaut_3 {
+    width: 75%;
+    height: auto;
+}
+
+
 
 div.options {
     flex-flow: row wrap;
     height: fit-content;
     background-color: black;
 }
-div.options div.service_card {
+div.options div.options_card {
     color: white;
     background-color: black
 }
-div.options div.service_card>p {
+div.options div.options_card>p {
     width: 100%;
     padding-bottom: 20px;
     border-bottom: 1px solid white;
@@ -262,10 +267,6 @@ div.video_section h1 {
     line-height: 80%;
     text-align: center;
     min-width: 25%;
-}
-div.video_section h1.bold {
-    font-family: 'Tungsten Bold';
-    color: rgb(145, 145, 145);
 }
 div.title_flex {
     display: flex;
