@@ -25,8 +25,8 @@ h1 {
 
 h2 {
     font-family: 'Tungsten Medium';
-    font-size: 1.6rem;
-    letter-spacing: .09rem;
+    font-size: 2rem;
+    letter-spacing: .08rem;
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
 }
@@ -73,7 +73,6 @@ h6 {
     color: white;
 }
 
-/* custom global elements */
 div.full {
     width: 100vw;
     height: 100vh;
@@ -158,18 +157,18 @@ div.experience_list {
 div.why img {
     height: 100px;
     width: 100px;
-    background-color: white;
-    border: 2px solid lightgray;
-    border-radius: 50px;
     margin: 0 5%;
 }
 
 
 div.services {
-    height: fit-content;
+    width: 100vw;
+    margin: 0;
+    padding: 2%;
     display: flex;
-    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
     background-color: lightgray;
 }
 div.services_title {
@@ -182,17 +181,18 @@ div.services_section {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
+    align-items: center;
 }
 div.service_card {
     padding: 5%;
-    max-width: 100%;
+    width: 50%;
     height: 200px;
     background-color: white;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    transform: translateY(20vh);
+    /* transform: translateY(20vh); */
 }
 div.service_card_icon {
     width: 30%;
@@ -219,8 +219,11 @@ div.service_card>div.service_card_icon:nth-child(odd) {
 div.service_card>div.service_card_icon:nth-child(even) {
     border-left: 2px solid black;
 }
-
-
+div.service_card>div.service_card_text:nth-child(odd) {
+    text-align: right;
+    align-items: flex-end;
+    margin: 0;
+}
 
 div.service_card>p strong {
     font-size: 2.2rem;
@@ -236,13 +239,11 @@ div.service_card img {
 div.options {
     flex-flow: row wrap;
     height: fit-content;
-}
-div.options div.services_row {
-    padding-top: 4vh;
+    background-color: black;
 }
 div.options div.service_card {
     color: white;
-    background-color: black;
+    background-color: black
 }
 div.options div.service_card>p {
     width: 100%;
