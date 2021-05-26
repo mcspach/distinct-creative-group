@@ -37,14 +37,13 @@
   to { letter-spacing: .14em; }
 }
 
-/* title stretch the second version */
-.stretching_bg {
-  animation: stretchBG 2s ease forwards;
+.reveal {
+  transform: rotate3d(0, 1, 0, 90deg) scale(.9);
+}
+.revealed {
+  animation: turnIcon 2s ease-out .1s forwards;
 }
 
-@keyframes stretchBG {
-  to { 
-    letter-spacing: .3em;
-    transform: translateX(0);
-   }
+@keyframes turnIcon {
+  to { transform: rotate3d(0, 1, 0, 0deg) scale(1);}
 }

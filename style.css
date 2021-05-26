@@ -123,8 +123,8 @@ button:hover {
 
 div.tagline {
     background-image: url('images/astronaut1.png');
-    background-attachment: fixed;
-    background-size: 100%;
+    /* background-attachment: fixed; */
+    background-size: 90%;
     background-position: bottom;
     background-repeat: no-repeat; 
     padding: 10% 10% 4% 10%;
@@ -165,6 +165,9 @@ div.experience_container {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+}
+div.experience_container h6.white_text{
+    font-size: 1.05rem;
 }
 div.experience_list {
     margin-top: 3%;
@@ -211,7 +214,6 @@ div.service_card {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    /* transform: translateY(20vh); */
 }
 div.service_card_icon {
     width: 25%;
@@ -248,15 +250,15 @@ div.service_card>p strong {
     font-size: 2.2rem;
     font-family: "Tungsten Extra";
 }
-div.service_card img {
-    width: 120px;
-    height: 120px;
+img.card_icon {
+    width: 100px;
+    height: 100px;
 }
 
 img.astronaut_3 {
     width: 50%;
     height: auto;
-    transform: translateY(40%);
+    transform: translateY(50%) rotate(8deg);
 }
 
 
@@ -283,13 +285,14 @@ div.options div.options_card p strong {
 }
 div.options div.options_card h6 strong {
     font-family: 'Tungsten Extra';
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color:rgb(172, 172, 172);
 }
 
 
 div.video_section {
-    padding-top: 10%;
+    width: 100%;
+    box-sizing: border-box;
     height: fit-content;
     flex-flow: column nowrap;
 }
@@ -306,6 +309,21 @@ div.title_flex {
     justify-content: space-evenly;
     width: 100%;
     height: 20vh;
+}
+div.title_flex.verts {
+    box-sizing: border-box;
+    padding: 0 21%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div.vert_left {
+    height: 150px;
+    border-left: 2px solid black;
+}
+div.vert_right {
+    height: 75px;
+    border-right: 2px solid black;
 }
 
 div.vid {
