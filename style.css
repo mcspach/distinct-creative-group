@@ -1,5 +1,6 @@
 @import url("tungsten_font.css");
 @import url("animations.css");
+@import url("form.css");
 
 
 html {
@@ -192,6 +193,12 @@ div.services {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    background-image: url('images/astronaut2.png');
+    background-size: 16%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-position: 80% -100px;
 }
 div.services_title {
     margin: 5% 0 5% 0;
@@ -209,7 +216,6 @@ div.service_card {
     padding: 3%;
     width: 70%;
     height: 200px;
-    background-color: white;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -251,8 +257,8 @@ div.service_card>p strong {
     font-family: "Tungsten Extra";
 }
 img.card_icon {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 img.astronaut_3 {
