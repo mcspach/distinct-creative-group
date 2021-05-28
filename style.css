@@ -102,7 +102,7 @@ button {
     transition: .4s;
 }
 button#call_button {
-    animation: 2s ease-out 0s 1 slideInFromRight;
+    animation: slideInFromRight 2s ease-out 0s 1;
 }
 button.dark {
     border: 1px solid white;
@@ -165,7 +165,7 @@ div.why {
 }
 
 div.why .designing {
-    font-family: 'Tungsten Thin';
+    /* font-family: 'Tungsten Thin'; */
     color: rgb(164, 164, 164);
 }
 div.why .line_box {
@@ -209,8 +209,7 @@ div.services {
     background-size: 16%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-origin: border-box;
-    background-position: 80% -100px;
+    background-position: 85% -25vh;
 }
 div.services_title {
     margin: 5% 0 5% 0%;
@@ -250,7 +249,7 @@ div.service_card_text {
     justify-content: center;
 }
 div.service_card_text h4 {
-    width: 70%;
+    max-width: 400px;
 }
 div.service_card>div.service_card_icon:nth-child(odd) {
     border-right: 1px solid black;
@@ -261,28 +260,23 @@ div.service_card>div.service_card_icon:nth-child(even) {
 div.service_card>div.service_card_text:nth-child(odd) {
     text-align: right;
     align-items: flex-end;
-    margin: 0;
-}
-
-div.service_card>p strong {
-    font-size: 2.2rem;
-    font-family: "Tungsten Extra";
 }
 img.card_icon {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
 
 
 div.options {
     flex-flow: row wrap;
-    height: fit-content;
+    /* height: fit-content; */
     background-color: black;
 }
 div.options div.options_card {
-    padding: 2% 15% 0 15%;
+    padding: 1% 15% 0 15%;
     color: white;
-    background-color: black
+    background-color: black;
+    transform: translateY(20vh);
 }
 div.options div.options_card p {
     font-family: 'Tungsten Medium';
@@ -307,13 +301,13 @@ div.options div.button_center {
     height: 75px;
 }
 div.button_center button {
-    transform: translateY(250%);
+    transform: translateY(190%);
 }
 
 img.astronaut_3 {
     width: 45%;
     height: auto;
-    transform: translateY(45%) rotate(8deg);
+    transform: translateY(35%) rotate(8deg);
 }
 
 

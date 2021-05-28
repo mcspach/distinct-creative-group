@@ -63,7 +63,7 @@ window.addEventListener('resize', checkScrollTitle, false);
 
 // animation for shadows on cards
 
-var cards = document.querySelectorAll(".pop_shadow");
+var cards = document.querySelectorAll(".slide_up");
 fraction = .2;
 function checkScrollCard() {
 
@@ -81,7 +81,7 @@ function checkScrollCard() {
             visible = visibleX * visibleY / (w * h);
 
             if (visible > fraction) {
-                card.classList.add("dropping");
+                card.classList.add("sliding");
             }
     }
 }
