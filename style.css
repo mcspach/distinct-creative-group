@@ -1,4 +1,5 @@
 @import url("tungsten_font.css");
+@import url("typography.css");
 @import url("animations.css");
 @import url("form.css");
 
@@ -16,74 +17,7 @@ body {
     color: black;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
 
-h1 {
-    font-family: 'Tungsten Bold';
-    font-size: 5.6rem;
-    letter-spacing: .35rem;
-    line-height: 4.2rem;
-    margin-block-start: 0.1em;
-    margin-block-end: 0.1em;
-}
-
-h2 {
-    font-family: 'Tungsten Medium';
-    font-size: 2.3rem;
-    letter-spacing: .08rem;
-    margin-block-start: 0.1em;
-    margin-block-end: 0.1em;
-}
-
-h3 {
-    font-family: 'Tungsten Medium';
-    font-size: 1.4rem;
-    margin-block-start: 0.1em;
-    margin-block-end: 0.1em;
-}
-
-h4 {
-    font-family: "Tungsten Thin";
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    margin-block-start: 0.1em;
-    margin-block-end: 0.1em;
-}
-h4.tiny {
-    font-size: 1rem;
-    line-height: 0.8rem;
-}
-
-h5 {
-    font-family: "Tungsten Thin";
-    font-size: 2.1rem;
-    margin-block-start: 0.1em;
-    margin-block-end: 0.1em;
-}
-
-h6 {
-    font-family: 'Tungsten Light';
-    font-size: 1.4rem;
-    letter-spacing: .2rem;
-    color: black;   
-    margin-block-start: 0.1em;
-    margin-block-end: 0.1em;
-}
-
-p {
-
-}
-
-.center_text {
-    text-align: center;
-}
-
-.white_text {
-    color: white;
-}
 
 div.full {
     width: 100%;
@@ -94,29 +28,6 @@ div.full {
     justify-content: center;
     align-items: center;
 }
-
-button {
-    height: 40px;
-    background-color: unset;
-    border: 1px solid black;
-    transition: .4s;
-}
-button#call_button {
-    animation: slideInFromRight 2s ease-out 0s 1;
-}
-button.dark {
-    border: 1px solid white;
-    color: white;
-}
-button:hover {
-    transform: scale(1.02);
-}
-button.dark:hover {
-    border: 1px solid white;
-    color: white;
-    transform: scale(1.02) translateY(245%);
-}
-
 
 .top_bar {
     box-sizing: border-box;
@@ -165,7 +76,7 @@ div.why {
 }
 
 div.why .designing {
-    /* font-family: 'Tungsten Thin'; */
+    font-family: 'Tungsten Thin';
     color: rgb(164, 164, 164);
 }
 div.why .line_box {
@@ -303,7 +214,9 @@ div.options div.button_center {
 div.button_center button {
     transform: translateY(190%);
 }
-
+div.button_center button:hover {
+    transform: translateY(190%);
+}
 img.astronaut_3 {
     width: 45%;
     height: auto;

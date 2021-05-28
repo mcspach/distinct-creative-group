@@ -1,1 +1,54 @@
-/* comment */
+#form_full {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    margin: 0 auto;
+    display: none;
+    position: fixed;
+    }
+    div#popupContact {
+        margin: 0 auto;
+    }
+    form {
+        margin: 10%;
+        padding: 2%;
+        display: flex;
+        flex-flow: column nowrap;
+        border:2px solid white;
+        background-color:black;
+    }
+    form h2, form h6 {
+        color: white;
+    }
+    form hr {
+    margin:10px -50px;
+    border:0;
+    border-top:1px solid black;
+    }
+    form input {
+    width:85%;
+    padding:10px;
+    margin-top:24px;
+    border:1px solid black;
+    font-size:16px;
+    }
+    textarea {
+    width:85%;
+    height:95px;
+    padding:10px;
+    resize:none;
+    margin-top:24px;
+    border:1px solid black;
+    margin-bottom:24px
+    }
+    /* form span {
+    color:rgb(148, 5, 5);
+    font-weight:500;
+    } */
+    form > button {
+        width: 50%;
+        margin-bottom: 5px;
+        align-self: center;
+    }

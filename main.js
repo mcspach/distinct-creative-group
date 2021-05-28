@@ -1,3 +1,13 @@
+//functions for onclick for form.
+
+function div_show() {
+    document.getElementById('form_full').style.display = "block";
+    }
+    //Function to Hide Popup
+    function div_hide(){
+    document.getElementById('form_full').style.display = "none";
+    }
+
 //autoplay function on scroll for video
 
 var videos = document.getElementsByTagName("video"),
