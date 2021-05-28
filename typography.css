@@ -74,3 +74,98 @@ form>textarea, form>input {
 .white_text {
     color: white;
 }
+
+
+button {
+    height: 40px;
+    background-color: unset;
+    border: 1px solid black;
+    transition: .4s;
+}
+button#call_button {
+    animation: slideInFromRight 2s ease-out 0s 1;
+}
+button.dark {
+    border: 1px solid white;
+    color: white;
+}
+button:hover {
+    transform: scale(1.02);
+}
+button.dark:hover {
+    border: 1px solid white;
+    color: white;
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 720px) {
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-family: 'Tungsten Bold';
+        font-size: 4rem;
+        letter-spacing: .2rem;
+        line-height: 3rem;
+        margin-block-start: 0.1em;
+        margin-block-end: 0.1em;
+    }
+
+    h2 {
+        font-family: 'Tungsten Medium';
+        font-size: 2rem;
+        letter-spacing: .07rem;
+        margin-block-start: 0.1em;
+        margin-block-end: 0.1em;
+    }
+
+    h3 {
+        font-family: 'Tungsten Medium';
+        font-size: 1.1rem;
+        margin-block-start: 0.1em;
+        margin-block-end: 0.1em;
+    }
+
+    h4 {
+        font-family: "Tungsten Thin";
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        margin-block-start: 0.1em;
+        margin-block-end: 0.1em;
+    }
+    h4.tiny {
+        font-size: .8rem;
+        line-height: 0.6rem;
+    }
+
+    h5 {
+        font-family: "Tungsten Thin";
+        font-size: 1.8rem;
+        margin-block-start: 0.1em;
+        margin-block-end: 0.1em;
+    }
+
+    h6 {
+        font-family: 'Tungsten Light';
+        font-size: 1.1rem;
+        letter-spacing: .2rem;
+        color: black;   
+        margin-block-start: 0.1em;
+        margin-block-end: 0.1em;
+    }
+
+    p {
+        font-family: 'Tungsten Light';
+        font-size: 1.1rem;
+    }
+
+    form>textarea, form>input {
+        font-family: 'Tungsten Medium';
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+}
