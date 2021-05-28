@@ -16,11 +16,16 @@
         padding: 2%;
         display: flex;
         flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
         border:2px solid white;
         background-color:black;
     }
     form h2, form h6 {
         color: white;
+    }
+    form p {
+        margin: 0;
     }
     form hr {
     margin:10px -50px;
@@ -41,7 +46,7 @@
     resize:none;
     margin-top:24px;
     border:1px solid black;
-    margin-bottom:24px
+    margin-bottom:24px;
     }
     /* form span {
     color:rgb(148, 5, 5);
@@ -50,5 +55,4 @@
     form > button {
         width: 50%;
         margin-bottom: 5px;
-        align-self: center;
     }
