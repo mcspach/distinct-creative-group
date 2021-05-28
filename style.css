@@ -1,5 +1,6 @@
 @import url("tungsten_font.css");
 @import url("animations.css");
+@import url("form.css");
 
 
 html {
@@ -96,14 +97,26 @@ div.full {
 
 button {
     height: 40px;
-    border: 2px solid black;
-    background-color: white;
-    animation: 2s ease-out 0s 1 slideInFromRight;
+    background-color: unset;
+    border: 1px solid black;
     transition: .4s;
+}
+button#call_button {
+    animation: 2s ease-out 0s 1 slideInFromRight;
+}
+button.dark {
+    border: 1px solid white;
+    color: white;
 }
 button:hover {
     transform: scale(1.02);
 }
+button.dark:hover {
+    border: 1px solid white;
+    color: white;
+    transform: scale(1.02) translateY(245%);
+}
+
 
 .top_bar {
     box-sizing: border-box;
@@ -187,14 +200,20 @@ div.services {
     width: 100%;
     box-sizing: border-box;
     margin: 0;
-    padding: 2%;
+    padding: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    background-image: url('images/astronaut2.png');
+    background-size: 16%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-position: 80% -100px;
 }
 div.services_title {
-    margin: 5% 0 5% 0;
+    margin: 5% 0 5% 0%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
@@ -206,10 +225,9 @@ div.services_section {
     align-items: center;
 }
 div.service_card {
-    padding: 3%;
+    padding: 1%;
     width: 70%;
     height: 200px;
-    background-color: white;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -251,16 +269,9 @@ div.service_card>p strong {
     font-family: "Tungsten Extra";
 }
 img.card_icon {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
-
-img.astronaut_3 {
-    width: 50%;
-    height: auto;
-    transform: translateY(50%) rotate(8deg);
-}
-
 
 
 div.options {
@@ -276,7 +287,7 @@ div.options div.options_card {
 div.options div.options_card p {
     font-family: 'Tungsten Medium';
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: 1px solid white;
 }
 div.options div.options_card p strong {
@@ -288,37 +299,52 @@ div.options div.options_card h6 strong {
     font-size: 1.1rem;
     color:rgb(172, 172, 172);
 }
+div.options div.button_center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 75px;
+}
+div.button_center button {
+    transform: translateY(250%);
+}
+
+img.astronaut_3 {
+    width: 45%;
+    height: auto;
+    transform: translateY(45%) rotate(8deg);
+}
 
 
-div.video_section {
+div.vert_section {
     width: 100%;
     box-sizing: border-box;
     height: fit-content;
-    flex-flow: column nowrap;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 10%;
 }
-div.video_section h1 {
+div.vert_section h1 {
     font-family: 'Tungsten Thin';
     margin: 0;
     line-height: 80%;
     text-align: center;
-    min-width: 25%;
 }
 div.title_flex {
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
     width: 100%;
-    height: 20vh;
 }
-div.title_flex.verts {
-    box-sizing: border-box;
-    padding: 0 21%;
-    justify-content: space-between;
-    align-items: flex-start;
+div.title_flex.title_bottom {
+    justify-content: flex-end;
+    padding-bottom: 3%;
 }
-
 div.vert_left {
-    height: 150px;
+    height: 190px;
     border-left: 2px solid black;
 }
 div.vert_right {
@@ -326,8 +352,17 @@ div.vert_right {
     border-right: 2px solid black;
 }
 
+div.video_section {
+    width: 100%;
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 2%;
+}
 div.vid {
     width: 100%;
+    padding-bottom: 3%;
 }
 video {
     width: 100%;
@@ -363,8 +398,8 @@ div.footer img:hover {
 }
 
 
-@media screen and (max-width: 1100px) {
-    /* h1 {
+/* @media screen and (max-width: 1100px) {
+    h1 {
         font-size: 2.5rem;
     }
     .hero>svg {
@@ -400,8 +435,8 @@ div.footer img:hover {
         flex-flow: column nowrap;
         justify-content: center;
         transition: 1000;
-    } */
-}
+    } 
+} */
 
 /* @media screen and (max-width: 550px) {
     div.services_row {
