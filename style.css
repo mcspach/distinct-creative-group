@@ -19,7 +19,6 @@ body {
 }
 
 
-
 div.full {
     width: 100%;
     min-height: 100vh;
@@ -31,7 +30,7 @@ div.full {
     box-sizing: border-box;
 }
 
-.top_bar {
+div.top_bar {
     box-sizing: border-box;
     z-index: 8;
     display: flex;
@@ -43,8 +42,9 @@ div.full {
     width: 100%;
     background-color: white;
 }
-.top_bar>img {
-    max-width: 160px;
+div.top_bar img {
+    width: 150px;
+    height: auto;
 }
 
 div.tagline {
