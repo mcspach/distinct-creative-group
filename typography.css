@@ -98,43 +98,25 @@ button.dark:hover {
     transform: scale(1.02);
 }
 
-@media screen and (max-width: 720px) {
-
-    a {
-        color: white;
-        text-decoration: none;
-    }
+@media screen and (max-width: 850px) {
 
     h1 {
-        font-family: 'Tungsten Bold';
         font-size: 3.5rem;
         letter-spacing: .2rem;
         line-height: 2.8rem;
-        margin-block-start: 0.1em;
-        margin-block-end: 0.1em;
     }
 
     h2 {
-        font-family: 'Tungsten Medium';
         font-size: 2rem;
         letter-spacing: .07rem;
-        margin-block-start: 0.1em;
-        margin-block-end: 0.1em;
     }
 
     h3 {
-        font-family: 'Tungsten Medium';
         font-size: 1.1rem;
-        margin-block-start: 0.1em;
-        margin-block-end: 0.1em;
     }
 
     h4 {
-        font-family: "Tungsten Thin";
         font-size: 1.1rem;
-        text-transform: uppercase;
-        margin-block-start: 0.1em;
-        margin-block-end: 0.1em;
     }
     h4.tiny {
         font-size: .8rem;
@@ -142,30 +124,20 @@ button.dark:hover {
     }
 
     h5 {
-        font-family: "Tungsten Thin";
-        font-size: 1.8rem;
-        margin-block-start: 0.1em;
-        margin-block-end: 0.1em;
+        font-size: 1.5rem;
     }
 
     h6 {
-        font-family: 'Tungsten Light';
         font-size: 1.1rem;
-        letter-spacing: .2rem;
-        color: black;   
-        margin-block-start: 0.1em;
-        margin-block-end: 0.1em;
+        letter-spacing: .2rem;  
     }
 
     p {
-        font-family: 'Tungsten Light';
         font-size: 1.1rem;
     }
 
     form>textarea, form>input {
-        font-family: 'Tungsten Medium';
         font-size: 1.1rem;
-        text-transform: uppercase;
         letter-spacing: .1rem;
     }
 }
