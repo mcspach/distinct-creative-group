@@ -1,4 +1,5 @@
 #form_full {
+    box-sizing: border-box;
     position: absolute;
     z-index: 10;
     width: 100%;
@@ -13,6 +14,7 @@
         margin: 0 auto;
     }
     form {
+        box-sizing: border-box;
         width: 100%;
         padding-top: 1%;
         margin: 100px 0 0 0;

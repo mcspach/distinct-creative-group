@@ -5,12 +5,12 @@
 
 
 html {
-    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 body {
-    box-sizing: border-box;
     width: 100%;
-    margin: 0 auto;
+    margin:0;
     padding: 0;
     text-align: left;
     font-family: 'Tungsten Thin';
@@ -27,6 +27,7 @@ div.full {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .top_bar {
@@ -47,7 +48,6 @@ div.full {
 
 div.tagline {
     background-image: url('images/astronaut1.png');
-    /* background-attachment: fixed; */
     background-size: 90%;
     background-position: bottom;
     background-repeat: no-repeat; 
@@ -60,7 +60,7 @@ div.tagline {
     box-sizing: border-box;
 }
 div.tagline h1, h6 {
-    width: 80%;
+    width: 70%;
 }
 
 div.why {
@@ -106,9 +106,6 @@ div.why img {
     margin: 0 5%;
 }
 
-div.astro_padding {
-    margin: 0 4% 4% 4%;
-}
 div.services {
     width: 100%;
     box-sizing: border-box;
@@ -340,7 +337,7 @@ div.footer img:hover {
         padding: 50px 25px;
     }
     div.experience_container {
-        width: 100%;
+        width: 90%;
         padding: 4%;
         display: flex;
         flex-flow: column nowrap;
