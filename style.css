@@ -106,26 +106,23 @@ div.why img {
     margin: 0 5%;
 }
 
-
+div.astro_padding {
+    margin: 0 4% 4% 4%;
+}
 div.services {
     width: 100%;
     box-sizing: border-box;
-    margin: 0;
-    padding: 4%;
+    margin: 0%;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-flow: column nowrap;
     background-image: url('images/astronaut2.png');
-    background-size: 16%;
+    background-position: 50px -50px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 85% -25vh;
-}
-div.services_title {
-    margin: 5% 0 5% 0%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
 }
 div.services_section {
     width: 90%;
@@ -179,8 +176,8 @@ img.card_icon {
 
 
 div.options {
+    padding: 2% 0 0 0;
     flex-flow: row wrap;
-    /* height: fit-content; */
     background-color: black;
 }
 div.options div.options_card {
@@ -226,17 +223,19 @@ img.astronaut_3 {
 
 div.vert_section {
     width: 100%;
+    min-height: 60vh;
     box-sizing: border-box;
+    text-align: center;
     height: fit-content;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    padding-bottom: 10%;
+    /* padding-bottom: 10%; */
 }
 div.vert_section h1 {
     font-family: 'Tungsten Thin';
     margin: 0;
-    line-height: 80%;
+    line-height: 90%;
     text-align: center;
 }
 div.title_flex {
@@ -244,19 +243,21 @@ div.title_flex {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: start;
-    width: 100%;
 }
 div.title_flex.title_bottom {
     justify-content: flex-end;
-    padding-bottom: 3%;
+    padding-bottom: 14%;
+}
+div.vert-align {
+    justify-content: flex-end;
 }
 div.vert_left {
     height: 190px;
-    border-left: 2px solid black;
+    border-left: 1px solid black;
 }
 div.vert_right {
     height: 75px;
-    border-right: 2px solid black;
+    border-right: 1px solid black;
 }
 
 div.video_section {
@@ -269,7 +270,7 @@ div.video_section {
 }
 div.vid {
     width: 100%;
-    padding-bottom: 3%;
+    padding-bottom: 4%;
 }
 video {
     width: 100%;
@@ -278,8 +279,9 @@ video {
 
 div.footer {
     padding: 0 10% 10% 10%;
-    height: fit-content;
+    min-height: 50vh;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     text-align: left;
@@ -305,87 +307,157 @@ div.footer img:hover {
 }
 
 
-/* @media screen and (max-width: 1100px) {
-    h1 {
-        font-size: 2.5rem;
+@media screen and (max-width: 850px) {
+    .top_bar>svg {
+        max-width: 150px;
     }
-    .hero>svg {
-        width: 65%;
+    div.tagline h1 {
+        width: 72%;
+        font-size: 4.4rem;
+        line-height: 3.2rem;
     }
-    div.tagline>h1 {
-        font-size: 5.5rem;
-        letter-spacing: .6rem;
-        line-height: 4.8rem;
+    div.tagline {
+        background-size: 140%;
+        background-position: bottom;
+        background-repeat: no-repeat; 
+        padding: 25% 4% 4% 4%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        box-sizing: border-box;
     }
-    div.why_middle div {
-        font-size: 18px;
+    div.tagline h6 {
+        width: 72%;
+        font-size: 1.5rem;
+    }
+
+    div.why {
+        color: white;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4% 2%;
+        background-color: black;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;       
+    }
+    div.why .line_box {
+        border-left: 1px solid white;
+        padding: 50px 25px;
+    }
+    div.experience_container {
+        width: 100%;
+        padding: 4%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    div.experience_container h6.white_text{
+        font-size: .8rem;
+    }
+    div.why h1 {
+        font-size: 2.85rem;
+    }
+    div.services {
+        width: 100%;
+        margin: 0;
+        padding: 4% 2%;
+        background-position: 30px 30px;
+        background-size: 25vw;
+    }
+    div.services_section {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    div.service_card {
+        padding: 1%;
+        width: 95%;
+        height: 150px;
+    }
+    div.service_card_icon {
+        height: 150px;
+    }
+    div.service_card_text {
+        width: 80%;
+        height: 150px;
+        padding: 5%;
+    }
+    div.service_card_text h4 {
+        max-width: 70vw;
+    }
+    img.card_icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    div.why .line_box {
+        border-left: 1px solid white;
+        padding: 30px 14px;
     }
     div.why img {
         height: 50px;
         width: 50px;
-        background-color: white;
-        border-radius: 25px;
         margin: 2%;
     }
-    div.services_row {
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    }
-    div.services {
-        height: fit-content;
-    }
-    div.services_section {
-        height: fit-content;
-    }
 
-    div.title_flex {
-        flex-flow: column nowrap;
-        justify-content: center;
-        transition: 1000;
-    } 
-} */
-
-/* @media screen and (max-width: 550px) {
-    div.services_row {
-        flex-flow: column nowrap;
-        align-items: center;
+    div.options div.options_card {
+        max-width: 100%;
     }
-
-    h1 {
-        font-size: 2rem;
+    div.options div.options_card p strong {
+        font-size: 1.7rem;
     }
-    .hero>svg {
-        width: 90%;
-    }
-    div.tagline>h1 {
-        font-size: 3.5rem;
-        letter-spacing: .5rem;
-        line-height: 4rem;
-    }
-    div.tagline>h2 {
-        font-size: .8rem;
-        letter-spacing: .3rem;
-    }
-    div.why_middle>p {
-        box-shadow: 180px -120px 0px 60px lightgrey;
-    }
-    div.experience_container p {
+    div.options div.options_card h6 strong {
         font-size: 1rem;
+        letter-spacing: .1rem;
+        color: rgb(172, 172, 172);
+    }
+    div.button_center button {
+        transform: translateY(85%);
+    }
+    div.button_center button:hover {
+        transform: translateY(85%);
+    }
+    img.astronaut_3 {
+        width: 85%;
+        height: auto;
+        transform: translateY(25%) rotate(8deg);
     }
 
-    div.footer {
-        height: 100vh;
-        line-height: 400%;
+    div.vert_section h2 {
+        font-size: 1.4rem;
+        letter-spacing: .04rem;
     }
-    .footer>a {
-        margin-left: 10%;
+
+}
+
+@media screen and (max-width: 500px) {
+    div.tagline {
+        background-size: 140%;
+        background-position: bottom;
+        background-repeat: no-repeat; 
+        padding: 30% 4% 4% 4%;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        box-sizing: border-box;
     }
-    div.footer img {
-        width: 25vw;
-        height: 25vw;
-        margin-bottom: 30%;
-        box-shadow: 12px 12px 0px 0px grey;
+    div.tagline h1, h6 {
+        width: 80%;
     }
-} */
+
+    .footer > a {
+        margin-left: 10%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+    .footer > a > img {
+        margin: 12%;    
+    }
+}
