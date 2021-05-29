@@ -230,7 +230,6 @@ div.vert_section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    /* padding-bottom: 10%; */
 }
 div.vert_section h1 {
     font-family: 'Tungsten Thin';
@@ -312,24 +311,16 @@ div.footer img:hover {
         max-width: 150px;
     }
     div.tagline h1 {
-        width: 72%;
+        width: 74%;
         font-size: 4.4rem;
         line-height: 3.2rem;
     }
     div.tagline {
-        background-size: 140%;
-        background-position: bottom;
-        background-repeat: no-repeat; 
-        padding: 25% 4% 4% 4%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: left;
-        box-sizing: border-box;
+        background-size: 135%;
+        padding: 16% 4% 4% 4%;
     }
     div.tagline h6 {
-        width: 72%;
+        width: 74%;
         font-size: 1.5rem;
     }
 
@@ -435,18 +426,10 @@ div.footer img:hover {
 
 @media screen and (max-width: 500px) {
     div.tagline {
-        background-size: 140%;
-        background-position: bottom;
-        background-repeat: no-repeat; 
-        padding: 30% 4% 4% 4%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: left;
-        box-sizing: border-box;
+        background-size: 145%;
+        padding: 26% 4% 4% 4%;
     }
-    div.tagline h1, h6 {
+    div.tagline h1, div.tagline h6 {
         width: 80%;
     }
 
