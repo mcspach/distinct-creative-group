@@ -304,9 +304,6 @@ div.footer img:hover {
 
 
 @media screen and (max-width: 850px) {
-    .top_bar>img {
-        max-width: 150px;
-    }
     div.tagline h1 {
         width: 74%;
         font-size: 4.4rem;
