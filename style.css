@@ -42,7 +42,7 @@ div.full {
     width: 100%;
     background-color: white;
 }
-.top_bar>svg {
+.top_bar>img {
     max-width: 160px;
 }
 
@@ -304,7 +304,7 @@ div.footer img:hover {
 
 
 @media screen and (max-width: 850px) {
-    .top_bar>svg {
+    .top_bar>img {
         max-width: 150px;
     }
     div.tagline h1 {
