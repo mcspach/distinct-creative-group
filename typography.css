@@ -77,10 +77,11 @@ form>textarea, form>input {
 
 
 button {
+    box-sizing: border-box;
     height: 40px;
     background-color: unset;
     border: 1px solid black;
-    transition: .4s;
+    transition: .05s;
 }
 button#call_button {
     animation: slideInFromRight 2s ease-out 0s 1;
@@ -90,12 +91,9 @@ button.dark {
     color: white;
 }
 button:hover {
-    transform: scale(1.02);
+    border-width: 2px;
 }
 button.dark:hover {
-    border: 1px solid white;
-    color: white;
-    transform: scale(1.02);
 }
 
 @media screen and (max-width: 850px) {

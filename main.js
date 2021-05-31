@@ -10,13 +10,13 @@ function div_show() {
 
 //autoplay function on scroll for video
 
-var videos = document.getElementsByTagName("video"),
+let videos = document.getElementsByTagName("video"),
 fraction = 0.5;
 function checkScroll() {
 
     for(var i = 0; i < videos.length; i++) {
 
-        var video = videos[i];
+        const video = videos[i];
 
         var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
             b = y + h, //bottom
