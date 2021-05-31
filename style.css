@@ -177,7 +177,7 @@ img.card_icon {
 
 div.options {
     padding: 2% 0 0 0;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     background-color: black;
 }
 div.options div.options_card {
