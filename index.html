@@ -21,6 +21,18 @@
 </head>
 
 <body>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+    <div class="preloader fadeout">
+        <dotlottie-player 
+        src="https://assets2.lottiefiles.com/dotlotties/dlf10_ih2skzbq.lottie"  
+        id="preloader"
+        class="radius"
+        background="transparent"  
+        speed="1"      
+        autoplay></dotlottie-player>
+    </div>
+
     <div class="top_bar">
             <img src="images/distinct-creative_logo_black.png" alt="distinct creative group logo">
             <button id="call_button" onclick="div_show()">
@@ -43,7 +55,7 @@
             </form>
     </div>
 
-    <div class="full tagline fadein">
+    <div class="full tagline">
         <div>
             <h1>INFLUENCING CONSUMERS<br>STARTS WITH<br>BRAND PERCEPTION</h1>
             <h6>DISTINCT STRATEGIES WILL SET YOUR BRAND&nbsp;APART</h6>

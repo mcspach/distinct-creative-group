@@ -30,6 +30,23 @@ div.full {
     box-sizing: border-box;
 }
 
+div.preloader {
+    background-color: white;
+    z-index: 12;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+}
+#preloader {
+    width: 100%;
+    height: auto;
+}
+
 div.top_bar {
     box-sizing: border-box;
     z-index: 8;
