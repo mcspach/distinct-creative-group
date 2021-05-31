@@ -43,25 +43,27 @@ div.top_bar {
     background-color: white;
 }
 div.top_bar img {
-    width: 150px;
-    height: auto;
+    height: 7vh;
+    width: auto;
 }
 
 div.tagline {
-    background-image: url('images/astronaut1.png');
-    background-size: 90%;
-    background-position: bottom;
-    background-repeat: no-repeat; 
-    padding: 10% 10% 4% 10%;
+    height: 90vh;
+    padding-top: 16vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     text-align: left;
     box-sizing: border-box;
+    overflow: hidden;
 }
-div.tagline h1, h6 {
+div.tagline div {
     width: 70%;
+}
+div.tagline>img {
+    max-width: 80%;
+    justify-self: flex-end;
 }
 
 div.why {
@@ -111,7 +113,7 @@ div.services {
     width: 100%;
     box-sizing: border-box;
     margin: 0%;
-    padding: 0;
+    padding: 4% 2%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -305,18 +307,15 @@ div.footer img:hover {
 
 
 @media screen and (max-width: 850px) {
-    div.tagline h1 {
+    div.tagline div {
         width: 74%;
-        font-size: 4.4rem;
-        line-height: 3.2rem;
-    }
-    div.tagline {
-        background-size: 135%;
-        padding: 16% 4% 4% 4%;
     }
     div.tagline h6 {
-        width: 74%;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        line-height: 1.3rem;
+    }
+    div.tagline img {
+        max-width: 99%;
     }
 
     div.why {
@@ -350,7 +349,6 @@ div.footer img:hover {
     div.services {
         width: 100%;
         margin: 0;
-        padding: 4% 2%;
         background-position: 30px 30px;
         background-size: 25vw;
     }
@@ -407,9 +405,9 @@ div.footer img:hover {
         transform: translateY(85%);
     }
     img.astronaut_3 {
-        width: 85%;
+        width: 80%;
         height: auto;
-        transform: translateY(25%) rotate(8deg);
+        transform: translateY(27%) rotate(8deg);
     }
 
     div.vert_section h2 {
@@ -420,12 +418,8 @@ div.footer img:hover {
 }
 
 @media screen and (max-width: 500px) {
-    div.tagline {
-        background-size: 145%;
-        padding: 26% 4% 4% 4%;
-    }
-    div.tagline h1, div.tagline h6 {
-        width: 80%;
+    div.tagline div {
+        width: 90%;
     }
 
     .footer > a {

@@ -34,14 +34,14 @@
     <div class="top_bar">
             <img src="images/distinct-creative_logo_black.png" alt="distinct creative group logo">
             <button id="call_button" onclick="div_show()">
-                <h3 class="button_text">FREE CONSULTATION</h3>
+                <h3 class="button_text">GET A QUOTE</h3>
             </button>
     </div>
 
     <div id="form_full">
             <form action="https://formspree.io/f/xleabbwp" method="POST">
+                <button id="close" class="dark" onclick ="div_hide()">X</button>
                 <h2>[ BECOME A CLIENT ]</h2><h6>CONTACT US TO SETUP YOUR FREE STRATEGY CALL.</h6>
-                <hr>
                     <input type="text" name="name" placeholder="Name" required>
                     <input type="email" name="mail" placeholder="Email" required>
                     <textarea id="msg" name="message" placeholder="What can we do for you?" required></textarea>
@@ -50,13 +50,15 @@
                 <button id="call" class="dark">
                     <a href="tel:+1-559-916-7165">CALL NOW [ +1-559-916-7165 ]</a>
                 </button>
-                <button id="close" class="dark" onclick ="div_hide()">close window</button>
             </form>
     </div>
 
     <div class="full tagline fadein">
-        <h1 class="fadein">INFLUENCING CONSUMERS<br>STARTS WITH<br>BRAND PERCEPTION</h1>
-        <h6 class="fadein">DISTINCT STRATEGIES WILL SET YOUR BRAND&nbsp;APART</h6>
+        <div>
+            <h1>INFLUENCING CONSUMERS STARTS WITH YOUR BRAND PERCEPTION</h1>
+            <h6>DISTINCT STRATEGIES WILL SET YOUR BRAND&nbsp;APART</h6>
+        </div>
+        <img src="images/astronaut1.png" alt="astronaut helmet">
     </div>
 
     <div class="why">
@@ -70,7 +72,7 @@
                 IF YOUR CONTENT DOESN'T PROVIDE VALUE<br>
                 NO ONE WILL LISTEN.</h5>
         <div class="experience_container">
-            <h6 class="white_text center_text">[ 30 YEARS OF COMBINED INDUSTRY&nbsp;EXPERIENCE ]</h6>
+            <h6 class="white_text center_text">[&nbsp;30 YEARS OF COMBINED INDUSTRY&nbsp;EXPERIENCE&nbsp;]</h6>
             <div class="experience_list">
                 <img src="images/exp_logo1.png" alt="logo nickelodeon" class="reveal">
                 <img src="images/exp_logo2.png" alt="logo OAAA" class="reveal">
@@ -133,7 +135,7 @@
                     <h4 class="tiny">4</h4>
                     <h2>CONTENT PRODUCTION</h2>
                     <div class="service_blurb">
-                        <h4>Distinct visual & written creative that effectively showcases&nbsp;your&nbsp;value</h4>
+                        <h4>Our distinct visual & written creative will effectively showcase&nbsp;your&nbsp;value</h4>
                     </div>
                 </div>
                 <div class="service_card_icon">
@@ -150,7 +152,7 @@
                     <h4 class="tiny">5</h4>
                     <h2>WEBSITE DESIGN</h2>
                     <div class="service_blurb">
-                        <h4>Complete web design and development services that accomplish&nbsp;your&nbsp;goals</h4>
+                        <h4>We provide complete web design and development services to accomplish&nbsp;your&nbsp;goals</h4>
                     </div>
                 </div>
             </div>
@@ -165,7 +167,8 @@
             <div class="services_row">
                 <div class="options_card slide_up"><p>01 <strong>[ AGENCY OF RECORD ]</strong></p>
                     <div class="options_blurb">
-                        <h6 class="white_text"><strong>AS YOUR AGENCY, WE PROVIDE:</strong><br><br>A SET NUMBER OF DEVELOPED CAMPAIGNS WITH CONTENT PROVIDED AS WELL AS MONTHLY STRATEGY MEETINGS DEDICATED TO RESEARCHING YOUR BRAND IDENTITY, CONSULTING, DEVELOPING AN EFFECTIVE MARKETING STRATEGY, AND CAMPAIGN MANAGEMENT. </h6>
+                        <h6 class="white_text"><strong>AS YOUR AGENCY, WE PROVIDE:</strong><br><br>
+                        AN IDENTITY ANAYSIS, BRAND STYLE GUIDE, CAMPAIGN DESIGN, CONTENT PRODUCTION, AND WEEKLY STRATEGY MEETINGS</h6>
                     </div>
                 </div>
                 <div class="options_card slide_up"><p>02 <strong>[ INDIVIDUAL CAMPAIGNS ]</strong></p>
