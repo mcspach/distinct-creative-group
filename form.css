@@ -58,8 +58,15 @@
         margin-bottom: 4%;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 550px) {
         textarea {
-            width: 300px;
+            max-width: 95%;
+        }
+        button#close {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
         }
     }

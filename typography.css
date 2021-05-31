@@ -99,9 +99,9 @@ button.dark:hover {
 @media screen and (max-width: 850px) {
 
     h1 {
-        font-size: 3.5rem;
-        letter-spacing: .18rem;
-        line-height: 2.8rem;
+        font-size: 4.5rem;
+        letter-spacing: .2rem;
+        line-height: 3.5rem;
     }
 
     h2 {
@@ -135,7 +135,15 @@ button.dark:hover {
     }
 
     form>textarea, form>input {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         letter-spacing: .1rem;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: .18rem;
+        line-height: 2.8rem;
     }
 }
