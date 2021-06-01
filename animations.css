@@ -61,8 +61,8 @@
   40.5% { background-color: black;}
   41% { background-color: white}
   74% { opacity: 1;}
-  99% { z-index: 12; }
+  99% { visibility: visible;}
   100% {opacity: 0;
-        z-index: 1;
+        visibility: hidden; 
         background-color: white}
 }

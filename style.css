@@ -197,6 +197,10 @@ div.options {
     flex-flow: column nowrap;
     background-color: black;
 }
+div.client_box {
+    background-color: black;
+    margin-bottom: 10%;
+}
 div.options div.options_card {
     padding: 1% 15% 0 15%;
     color: white;
@@ -290,12 +294,19 @@ video {
     width: 100%;
     height: auto;
 }
-
-div.client_box {
-    background-color: black;
-    margin-bottom: 5vh;
+div.mobile_gif {
+    display: none;
+    background-image: url(./videos/distinct_video.gif);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
 }
 
+
+.follow_text {
+    margin-top: 7%;
+}
 div.footer {
     padding: 0 10% 10% 10%;
     min-height: 50vh;
@@ -303,20 +314,23 @@ div.footer {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    line-height: 400%;
 }
-
-.footer>a {
+div.footer h2 {
+    max-width: 25vw;
+    text-align: left;
+    line-height: 200%;
+}
+div.footer div.footer_links {
     margin-left: 10%;
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
 }
-
-div.footer img {
-    width: 16vw;
-    height: 16vw;
-    margin-right: 5%;
+div.footer_links img {
+    width: 14vw;
+    height: auto;
+    margin: 2vw;
     box-shadow: 3px 4px 12px 2px rgb(172, 172, 172);
     transition: 0.4s;
 }
@@ -438,18 +452,28 @@ div.footer img:hover {
 }
 
 @media screen and (max-width: 500px) {
+    
     div.tagline div {
         width: 90%;
     }
 
-    .footer > a {
-        margin-left: 10%;
-        height: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
+    div.vid {
+        display: none;
     }
-    .footer > a > img {
-        margin: 12%;    
+
+    div.mobile_gif {
+        display: block;
+    }
+
+    div.footer {
+        min-height: 65vh;
+    }
+
+    div.footer div.footer_links {
+        margin-left: 10%;
+        flex-flow: column nowrap;
+    }
+    .footer > div.footer_links > img {
+        margin: 10%;    
     }
 }
