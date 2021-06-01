@@ -59,8 +59,10 @@
 @keyframes fadeOut {
   0% { background-color: black;}
   40.5% { background-color: black;}
-  40.6% { background-color: white}
+  41% { background-color: white}
   74% { opacity: 1;}
-  100% {opacity:0;
+  99% { z-index: 12; }
+  100% {opacity: 0;
+        z-index: 1;
         background-color: white}
 }
