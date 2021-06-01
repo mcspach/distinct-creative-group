@@ -197,9 +197,6 @@ div.options {
     flex-flow: column nowrap;
     background-color: black;
 }
-div.options .sm_title {
-    padding-top: 7%;
-}
 div.options div.options_card {
     padding: 1% 15% 0 15%;
     color: white;
@@ -285,15 +282,18 @@ div.video_section {
     height: fit-content;
     display: flex;
     flex-flow: column nowrap;
-    padding-bottom: 2%;
 }
 div.vid {
     width: 100%;
-    padding-bottom: 4%;
 }
 video {
     width: 100%;
     height: auto;
+}
+
+div.client_box {
+    background-color: black;
+    margin-bottom: 5vh;
 }
 
 div.footer {
