@@ -48,14 +48,19 @@
   to { transform: rotate3d(0, 1, 0, 0deg) scale(1);}
 }
 
-/* fadeOut animation */
 
+/* loaderBG */
+
+/* fadeOut animation */
 .fadeout {
-  animation: fadeOut 2.5s ease-in-out 4s forwards;
+  animation: fadeOut 6s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
-  to {opacity:0%;
-      display: none;
-    }
+  0% { background-color: black;}
+  40.5% { background-color: black;}
+  40.6% { background-color: white}
+  74% { opacity: 1;}
+  100% {opacity:0;
+        background-color: white}
 }

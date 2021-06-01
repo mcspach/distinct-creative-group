@@ -31,9 +31,9 @@ div.full {
 }
 
 div.preloader {
-    background-color: white;
+    background-color: black;
     z-index: 12;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -120,7 +120,7 @@ div.experience_list {
     justify-content: center;
     align-items: center;
 }
-div.why img {
+div.experience_list img {
     height: 100px;
     width: 100px;
     margin: 0 5%;
