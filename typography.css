@@ -83,17 +83,12 @@ button {
     border: 1px solid black;
     transition: .05s;
 }
-button#call_button {
-    animation: slideInFromRight 2s ease-out 0s 1;
-}
 button.dark {
     border: 1px solid white;
     color: white;
 }
 button:hover {
     border-width: 2px;
-}
-button.dark:hover {
 }
 
 @media screen and (max-width: 850px) {
