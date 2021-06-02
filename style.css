@@ -294,18 +294,10 @@ video {
     width: 100%;
     height: auto;
 }
-div.mobile_gif {
-    display: none;
-    background-image: url(./videos/distinct_video.gif);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 250px;
-}
 
 
-.follow_text {
-    margin-top: 7%;
+div.follow_text {
+    padding-top: 7%;
 }
 div.footer {
     padding: 0 10% 10% 10%;
@@ -461,14 +453,17 @@ div.footer img:hover {
         display: none;
     }
 
-    div.mobile_gif {
-        display: block;
-    }
-
     div.footer {
+        background-color: black;
         min-height: 65vh;
     }
-
+    div.follow_text {
+        background-color: black;
+        color: white;
+    }
+    div.footer h2 {
+        color: white;
+    }
     div.footer div.footer_links {
         margin-left: 10%;
         flex-flow: column nowrap;
