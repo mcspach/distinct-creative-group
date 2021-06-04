@@ -30,7 +30,7 @@ div.full {
     box-sizing: border-box;
 }
 
-div.top_bar {
+header.top_bar {
     box-sizing: border-box;
     z-index: 8;
     display: flex;
@@ -42,7 +42,7 @@ div.top_bar {
     width: 100%;
     background-color: white;
 }
-div.top_bar img {
+header.top_bar img {
     height: 7vh;
     width: auto;
 }
