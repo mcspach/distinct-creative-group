@@ -53,16 +53,13 @@
 
 /* fadeOut animation */
 .fadeout {
-  animation: fadeOut 6s ease-in-out forwards;
+  animation: fadeOut 3.4s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
-  0% { background-color: black;}
-  40.5% { background-color: black;}
-  41% { background-color: white}
-  74% { opacity: 1;}
+  0% { opacity:1;}
+  65% { opacity: 1;}
   99% { visibility: visible;}
   100% {opacity: 0;
-        visibility: hidden; 
-        background-color: white}
+        visibility: hidden;}
 }
