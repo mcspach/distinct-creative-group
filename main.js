@@ -12,33 +12,27 @@ function div_show() {
 
 //preloader
 
-const lottiefile = document.querySelector('.preloader');
-const large = `<dotlottie-player 
+// const preloader = document.querySelector('.preloader');
+// const large = ``;
+// const small = `<img src="images/PreloaderNew.gif" id="preloader">`
+
+/* <dotlottie-player 
 src="https://assets1.lottiefiles.com/dotlotties/dlf10_v0vairrb.lottie"  
 id="preloader"
 background="transparent"  
 speed="1"      
-autoplay></dotlottie-player>`;
-const small = `<img src="images/distinct-creative_logo-animation-for-mob.gif" id="preloader">`
+autoplay></dotlottie-player> */
 
 
-// <dotlottie-player 
-// src="https://assets6.lottiefiles.com/dotlotties/dlf10_apotskap.lottie"  
-// id="preloader"
-// class="size_for_width"
-// background="transparent"  
-// speed="1"      
-// autoplay></dotlottie-player>
-
-window.addEventListener('load', () => {
-  if (window.innerWidth < window.innerHeight) {
-    lottiefile.classList.add('fadeout');
-    lottiefile.innerHTML !== small ? lottiefile.innerHTML = small : console.log('carry on small');
-  } else {
-    lottiefile.classList.add('fadeout');
-    lottiefile.innerHTML !== large ? lottiefile.innerHTML = large : console.log('carry on large'); 
-  }
-})
+// window.addEventListener('load', () => {
+//   if (window.innerWidth < window.innerHeight) {
+//     preloader.classList.add('fadeout');
+//     preloader.innerHTML !== small ? preloader.innerHTML = small : console.log('carry on small');
+//   } else {
+//     preloader.classList.add('fadeout');
+//     preloader.innerHTML !== large ? preloader.innerHTML = large : console.log('carry on large'); 
+//   }
+// })
 
 
 //animation for titles
