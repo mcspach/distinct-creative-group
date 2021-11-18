@@ -1,0 +1,102 @@
+.studio {
+    text-transform:uppercase;
+    color: white;
+}
+:root {
+    --highlighter: #d3e139;
+  }
+.video_section_studio {
+    padding-top: 10vh;
+width: 100%;
+box-sizing: border-box;
+height: fit-content;
+display: flex;
+flex-flow: column nowrap;
+}
+div.vid_studio {
+    width: 100%;
+}
+div.why.studio_why {
+    padding: 2rem 2rem 0rem 2rem;
+    text-align: center;
+}
+div.why.studio_why div.studio_intro{
+    max-width: 500px;
+    /* padding: 1.5rem 0rem; */
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+.studio div.why.studio_why div.studio_intro h6{
+margin: 5% 0;
+}
+.tech_section {
+    background-image: url('images/studio/microphone.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: fit-content;
+    max-height: 90vh;
+    min-height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.tech_section img{
+    max-width: 80%;
+}
+.studio div.full_section {
+    background-color: black;
+width: 100%;
+min-height: 90vh;  
+display: flex;
+flex-flow: row nowrap; 
+}
+.studio div.full_section div.half_section {
+    background-color: black;
+    background-position:left;
+    background-size: cover;
+width: 50%;
+min-height: 90vh;
+display: flex;
+flex-flow: column nowrap;
+justify-content: space-evenly;
+align-content:flex-start;
+padding: 2rem;
+box-sizing: border-box;
+}
+
+.studio div.vert_section {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 850px) {
+    div.why.studio_why {
+        padding: 0 1rem;
+    }
+    .studio div.full_section {
+        height: fit-content;
+        min-height: 90vh;
+        flex-flow: column nowrap;
+    }
+    .studio div.full_section.row_two {
+        flex-flow: column-reverse nowrap;
+    }
+    .studio div.full_section div.half_section {
+        width: 100%;
+        min-height: 45vh;
+        padding: 1rem;
+    }
+    .studio li {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.why.studio_why div.studio_intro {
+        background-color: rgb(33, 33, 33);
+    }
+}

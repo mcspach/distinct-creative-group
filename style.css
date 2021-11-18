@@ -3,67 +3,356 @@
 @import url("typography.css");
 @import url("animations.css");
 @import url("form.css");
+@import url("recording-studio.css");
 
 
 html {
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
 body {
-    width: 100%;
-    margin:0;
-    padding: 0;
-    text-align: left;
-    font-family: 'Tungsten Thin';
-    color: black;
-    background-color: white;
+width: 100%;
+margin:0;
+padding: 0;
+text-align: left;
+font-family: 'Tungsten Thin';
+color: black;
+background-color: white;
 }
 
 div.full {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+width: 100%;
+min-height: 100vh;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
 }
 
 header.top_bar {
-    box-sizing: border-box;
-    z-index: 8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    padding: 2%;
-    position: fixed;
-    width: 100%;
-    background-color: white;
+box-sizing: border-box;
+z-index: 8;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 10vh;
+padding: 2%;
+position: fixed;
+width: 100%;
+background-color: white;
 }
 header.top_bar img {
-    height: 7vh;
-    width: auto;
+height: 7vh;
+width: auto;
+}
+header button {
+    margin: 0 .2rem;
+}
+header a {
+    color: black;
+}
+
+div#main_nav {
+box-sizing: border-box;
+z-index: 8;
+height: fit-content;
+transform: translateY(10vh);
+padding: 2%;
+position: fixed;
+width: 100%;
+background-color: black;
+border: 2px solid white;
+display: none;
+}
+div#main_nav nav {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+div#main_nav button {
+margin: 5px;
 }
 
 div.tagline {
-    height: 90vh;
-    padding-top: 16vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    box-sizing: border-box;
-    overflow: hidden;
+height: 90vh;
+padding-top: 16vh;
+display: flex;
+flex-flow: column nowrap;
+justify-content: space-between;
+align-items: center;
+text-align: left;
+box-sizing: border-box;
+overflow: hidden;
 }
 div.tagline div {
-    width: 70%;
+width: 70%;
 }
 div.tagline>img {
-    max-width: 80%;
-    justify-self: flex-end;
+max-width: 80%;
+justify-self: flex-end;
+}
+
+div.why {
+color: white;
+width: 100%;
+box-sizing: border-box;
+padding: 4% 2%;
+background-color: black;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+justify-content: space-between;       
+}
+
+div.why .designing {
+font-family: 'Tungsten Thin';
+color: rgb(164, 164, 164);
+}
+div.why .line_box {
+border-left: 1px solid white;
+padding: 50px 25px;
+}
+div.experience_container {
+width: 90%;
+padding: 4%;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+}
+div.experience_container h6.white_text{
+font-size: 1.05rem;
+}
+div.experience_list {
+margin-top: 3%;
+display: flex;
+flex-flow: row nowrap;
+justify-content: center;
+align-items: center;
+}
+div.experience_list img {
+height: 100px;
+width: 100px;
+margin: 0 5%;
+}
+
+div.services {
+width: 100%;
+box-sizing: border-box;
+margin: 0%;
+padding: 4% 2%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-flow: column nowrap;
+background-image: url('images/astronaut2.png');
+background-position: 50px -50px;
+background-size: contain;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+div.services_section {
+width: 90%;
+display: flex;
+flex-flow: column nowrap;
+justify-content: space-evenly;
+align-items: center;
+}
+div.service_card {
+padding: 1%;
+width: 70%;
+height: 200px;
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+justify-content: center;
+}
+div.service_card_icon {
+width: 25%;
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+div.service_card_text {
+width: 70%;
+height: 200px;
+padding: 2%;
+display: flex;
+flex-flow: column nowrap;
+align-items: flex-start;
+justify-content: center;
+}
+div.service_card_text h4 {
+max-width: 400px;
+}
+div.service_card>div.service_card_icon:nth-child(odd) {
+border-right: 1px solid black;
+}
+div.service_card>div.service_card_icon:nth-child(even) {
+border-left: 1px solid black;
+}
+div.service_card>div.service_card_text:nth-child(odd) {
+text-align: right;
+align-items: flex-end;
+}
+img.card_icon {
+width: 80px;
+height: 80px;
+}
+
+
+div.options {
+padding: 2% 0 0 0;
+flex-flow: column nowrap;
+background-color: black;
+}
+div.client_box {
+background-color: black;
+margin-bottom: 10%;
+}
+div.options div.options_card {
+padding: 1% 15% 0 15%;
+color: white;
+background-color: black;
+transform: translateY(20vh);
+}
+div.options div.options_card p {
+font-family: 'Tungsten Medium';
+width: 100%;
+padding-bottom: 10px;
+border-bottom: 1px solid white;
+}
+div.options div.options_card p strong {
+font-family: 'Tungsten Bold';
+font-size: 2.5rem;
+}
+div.options div.options_card h6 strong {
+font-family: 'Tungsten Extra';
+font-size: 1.1rem;
+color:rgb(172, 172, 172);
+}
+div.options div.button_center {
+display: flex;
+justify-content: center;
+align-items: flex-end;
+width: 100%;
+height: 75px;
+}
+div.button_center button {
+transform: translateY(190%);
+}
+div.button_center button:hover {
+transform: translateY(190%);
+}
+img.astronaut_3 {
+width: 45%;
+height: auto;
+transform: translateY(35%) rotate(8deg);
+}
+
+
+div.vert_section {
+width: 100%;
+min-height: 60vh;
+box-sizing: border-box;
+text-align: center;
+height: fit-content;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-evenly;
+}
+div.vert_section h1 {
+font-family: 'Tungsten Thin';
+margin: 0;
+line-height: 90%;
+text-align: center;
+}
+div.title_flex {
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+justify-content: start;
+}
+div.title_flex.title_bottom {
+justify-content: flex-end;
+padding-bottom: 14%;
+}
+div.vert-align {
+justify-content: flex-end;
+}
+div.vert_left {
+height: 190px;
+border-left: 1px solid black;
+}
+div.vert_right {
+height: 75px;
+border-right: 1px solid black;
+}
+
+div.video_section {
+width: 100%;
+box-sizing: border-box;
+height: fit-content;
+display: flex;
+flex-flow: column nowrap;
+}
+div.vid {
+width: 100%;
+}
+video {
+width: 100%;
+height: auto;
+}
+
+
+div.follow_text {
+padding-top: 7%;
+}
+div.footer {
+padding: 0 10% 10% 10%;
+min-height: 50vh;
+display: flex;
+flex-flow: row nowrap;
+justify-content: center;
+align-items: center;
+}
+div.footer h2 {
+max-width: 25vw;
+text-align: left;
+line-height: 200%;
+}
+div.footer div.footer_links {
+margin-left: 10%;
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+justify-content: center;
+}
+div.footer_links img {
+width: 14vw;
+height: auto;
+margin: 2vw;
+box-shadow: 3px 4px 12px 2px rgb(172, 172, 172);
+transition: 0.4s;
+}
+div.footer img:hover {
+transform: scale(1.02);
+box-shadow: 12px 12px 0px 0px grey;
+}
+
+
+@media screen and (max-width: 850px) {
+div.tagline div {
+    width: 74%;
+}
+div.tagline h6 {
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+}
+div.tagline img {
+    max-width: 99%;
 }
 
 div.why {
@@ -77,11 +366,6 @@ div.why {
     align-items: center;
     justify-content: space-between;       
 }
-
-div.why .designing {
-    font-family: 'Tungsten Thin';
-    color: rgb(164, 164, 164);
-}
 div.why .line_box {
     border-left: 1px solid white;
     padding: 50px 25px;
@@ -94,364 +378,121 @@ div.experience_container {
     align-items: center;
 }
 div.experience_container h6.white_text{
-    font-size: 1.05rem;
+    font-size: .8rem;
 }
-div.experience_list {
-    margin-top: 3%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+div.why h1 {
+    font-size: 2.85rem;
 }
-div.experience_list img {
-    height: 100px;
-    width: 100px;
-    margin: 0 5%;
-}
-
 div.services {
     width: 100%;
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 4% 2%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-flow: column nowrap;
-    background-image: url('images/astronaut2.png');
-    background-position: 50px -50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    margin: 0;
+    background-position: 30px 30px;
+    background-size: 25vw;
 }
 div.services_section {
-    width: 90%;
-    display: flex;
-    flex-flow: column nowrap;
+    width: 100%;
     justify-content: space-evenly;
-    align-items: center;
 }
 div.service_card {
     padding: 1%;
-    width: 70%;
-    height: 200px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
+    width: 95%;
+    height: 150px;
 }
 div.service_card_icon {
-    width: 25%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 150px;
 }
 div.service_card_text {
-    width: 70%;
-    height: 200px;
-    padding: 2%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    justify-content: center;
+    width: 80%;
+    height: 150px;
+    padding: 5%;
 }
 div.service_card_text h4 {
-    max-width: 400px;
-}
-div.service_card>div.service_card_icon:nth-child(odd) {
-    border-right: 1px solid black;
-}
-div.service_card>div.service_card_icon:nth-child(even) {
-    border-left: 1px solid black;
-}
-div.service_card>div.service_card_text:nth-child(odd) {
-    text-align: right;
-    align-items: flex-end;
+    max-width: 70vw;
 }
 img.card_icon {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
+div.why .line_box {
+    border-left: 1px solid white;
+    padding: 30px 14px;
+}
+div.experience_list img {
+    height: 50px;
+    width: 50px;
+    margin: 2%;
+}
 
-div.options {
-    padding: 2% 0 0 0;
-    flex-flow: column nowrap;
-    background-color: black;
-}
-div.client_box {
-    background-color: black;
-    margin-bottom: 10%;
-}
 div.options div.options_card {
-    padding: 1% 15% 0 15%;
-    color: white;
-    background-color: black;
-    transform: translateY(20vh);
-}
-div.options div.options_card p {
-    font-family: 'Tungsten Medium';
-    width: 100%;
-    padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    max-width: 100%;
 }
 div.options div.options_card p strong {
-    font-family: 'Tungsten Bold';
-    font-size: 2.5rem;
+    font-size: 1.7rem;
 }
 div.options div.options_card h6 strong {
-    font-family: 'Tungsten Extra';
-    font-size: 1.1rem;
-    color:rgb(172, 172, 172);
-}
-div.options div.button_center {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%;
-    height: 75px;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: rgb(172, 172, 172);
 }
 div.button_center button {
-    transform: translateY(190%);
+    transform: translateY(85%);
 }
 div.button_center button:hover {
-    transform: translateY(190%);
+    transform: translateY(85%);
 }
 img.astronaut_3 {
-    width: 45%;
+    width: 80%;
     height: auto;
-    transform: translateY(35%) rotate(8deg);
+    transform: translateY(27%) rotate(8deg);
 }
 
-
-div.vert_section {
-    width: 100%;
-    min-height: 60vh;
-    box-sizing: border-box;
-    text-align: center;
-    height: fit-content;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
+div.vert_section h2 {
+    font-size: 1.4rem;
+    letter-spacing: .04rem;
 }
-div.vert_section h1 {
-    font-family: 'Tungsten Thin';
-    margin: 0;
-    line-height: 90%;
-    text-align: center;
-}
-div.title_flex {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: start;
-}
-div.title_flex.title_bottom {
-    justify-content: flex-end;
-    padding-bottom: 14%;
-}
-div.vert-align {
-    justify-content: flex-end;
-}
-div.vert_left {
-    height: 190px;
-    border-left: 1px solid black;
-}
-div.vert_right {
-    height: 75px;
-    border-right: 1px solid black;
-}
-
-div.video_section {
-    width: 100%;
-    box-sizing: border-box;
-    height: fit-content;
-    display: flex;
-    flex-flow: column nowrap;
-}
-div.vid {
-    width: 100%;
-}
-video {
-    width: 100%;
-    height: auto;
-}
-
-
-div.follow_text {
-    padding-top: 7%;
-}
-div.footer {
-    padding: 0 10% 10% 10%;
-    min-height: 50vh;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-div.footer h2 {
-    max-width: 25vw;
-    text-align: left;
-    line-height: 200%;
-}
-div.footer div.footer_links {
-    margin-left: 10%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-}
-div.footer_links img {
-    width: 14vw;
-    height: auto;
-    margin: 2vw;
-    box-shadow: 3px 4px 12px 2px rgb(172, 172, 172);
-    transition: 0.4s;
-}
-div.footer img:hover {
-    transform: scale(1.02);
-    box-shadow: 12px 12px 0px 0px grey;
-}
-
-
-@media screen and (max-width: 850px) {
-    div.tagline div {
-        width: 74%;
-    }
-    div.tagline h6 {
-        font-size: 1.4rem;
-        line-height: 1.3rem;
-    }
-    div.tagline img {
-        max-width: 99%;
-    }
-
-    div.why {
-        color: white;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 4% 2%;
-        background-color: black;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: space-between;       
-    }
-    div.why .line_box {
-        border-left: 1px solid white;
-        padding: 50px 25px;
-    }
-    div.experience_container {
-        width: 90%;
-        padding: 4%;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
-    div.experience_container h6.white_text{
-        font-size: .8rem;
-    }
-    div.why h1 {
-        font-size: 2.85rem;
-    }
-    div.services {
-        width: 100%;
-        margin: 0;
-        background-position: 30px 30px;
-        background-size: 25vw;
-    }
-    div.services_section {
-        width: 100%;
-        justify-content: space-evenly;
-    }
-    div.service_card {
-        padding: 1%;
-        width: 95%;
-        height: 150px;
-    }
-    div.service_card_icon {
-        height: 150px;
-    }
-    div.service_card_text {
-        width: 80%;
-        height: 150px;
-        padding: 5%;
-    }
-    div.service_card_text h4 {
-        max-width: 70vw;
-    }
-    img.card_icon {
-        width: 50px;
-        height: 50px;
-    }
-
-    div.why .line_box {
-        border-left: 1px solid white;
-        padding: 30px 14px;
-    }
-    div.experience_list img {
-        height: 50px;
-        width: 50px;
-        margin: 2%;
-    }
-
-    div.options div.options_card {
-        max-width: 100%;
-    }
-    div.options div.options_card p strong {
-        font-size: 1.7rem;
-    }
-    div.options div.options_card h6 strong {
-        font-size: 1rem;
-        letter-spacing: .1rem;
-        color: rgb(172, 172, 172);
-    }
-    div.button_center button {
-        transform: translateY(85%);
-    }
-    div.button_center button:hover {
-        transform: translateY(85%);
-    }
-    img.astronaut_3 {
-        width: 80%;
-        height: auto;
-        transform: translateY(27%) rotate(8deg);
-    }
-
-    div.vert_section h2 {
-        font-size: 1.4rem;
-        letter-spacing: .04rem;
-    }
 
 }
 
 @media screen and (max-width: 500px) {
-    
-    div.tagline div {
-        width: 90%;
-    }
 
-    div.vid {
-        display: none;
-    }
+div#main_nav nav {
+    flex-flow: column nowrap;
+}
+div#main_nav nav button {
+    min-width: 180px;
+}
+div.tagline.full {
+    height: 90vh;
+    min-height: 90vh;
+}
+div.tagline div {
+    width: 90%;
+}
+div.why h1 {
+    font-size: 2.25rem;
+}
 
-    div.footer {
-        background-color: black;
-        min-height: 65vh;
-    }
-    div.follow_text {
-        background-color: black;
-        color: white;
-    }
-    div.footer h2 {
-        color: white;
-    }
-    div.footer div.footer_links {
-        margin-left: 10%;
-        flex-flow: column nowrap;
-    }
-    .footer > div.footer_links > img {
-        margin: 10%;    
-    }
+div.vid {
+    display: none;
+}
+
+div.footer {
+    background-color: black;
+    min-height: 65vh;
+}
+div.follow_text {
+    background-color: black;
+    color: white;
+}
+div.footer h2 {
+    color: white;
+}
+div.footer div.footer_links {
+    margin-left: 10%;
+    flex-flow: column nowrap;
+}
+.footer > div.footer_links > img {
+    margin: 10%;    
+}
 }
