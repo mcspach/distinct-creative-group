@@ -75,6 +75,10 @@ form>textarea, form>input {
     color: white;
 }
 
+.black_text {
+    color: white;
+}
+
 
 button {
     box-sizing: border-box;
