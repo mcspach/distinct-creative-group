@@ -28,6 +28,7 @@ if (document.getElementById('main_nav').style.display === "block") {
 };
 }
 
+
 //animation for titles
 
 
