@@ -2,9 +2,6 @@
     text-transform:uppercase;
     color: white;
 }
-:root {
-    --highlighter: #d3e139;
-  }
 .video_section_studio {
     padding-top: 10vh;
 width: 100%;
@@ -13,7 +10,16 @@ height: fit-content;
 display: flex;
 flex-flow: column nowrap;
 }
+div.no_desktop {
+    display: none !important;
+}
 div.vid_studio {
+    width: 100%;
+}
+div.mobile_vid_studio {
+    height: fit-content;
+}
+div.mobile_vid_studio img{
     width: 100%;
 }
 div.why.studio_why {
@@ -30,6 +36,7 @@ div.why.studio_why div.studio_intro{
 .studio div.why.studio_why div.studio_intro h6{
 margin: 5% 0;
 }
+
 .tech_section {
     background-image: url('images/studio/microphone.png');
     background-size: cover;
@@ -98,5 +105,25 @@ box-sizing: border-box;
 @media screen and (max-width: 500px) {
     div.why.studio_why div.studio_intro {
         background-color: rgb(33, 33, 33);
+    }
+    div.vid_studio {
+        width: 100%;
+        height: fit-content;
+        background-color: black;
+    }
+    div.mobile_vid_studio {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    div.mobile_vid_studio button{
+        margin: auto;
+        width: 40px;
+    }
+    div.no_mobile {
+        display: none !important;
+    }
+    div.no_desktop {
+        display: flex !important;
     }
 }
