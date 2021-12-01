@@ -212,6 +212,18 @@ div.client_box {
 background-color: black;
 margin-bottom: 20vh;
 }
+div.client_list {
+    margin-top: 3%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    }
+div.client_list img {
+    height: 100px;
+    width: 100px;
+    margin: 0 5%;
+    }
 div.options div.options_card {
 padding: 1% 15% 0 15%;
 color: white;
@@ -419,6 +431,11 @@ div.why .line_box {
     padding: 30px 14px;
 }
 div.experience_list img {
+    height: 50px;
+    width: 50px;
+    margin: 2%;
+}
+div.client_list img {
     height: 80px;
     width: 80px;
     margin: 0px 4%;
