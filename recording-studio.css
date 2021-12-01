@@ -92,25 +92,22 @@ box-sizing: border-box;
     }
     .studio div.full_section {
         height: fit-content;
-        min-height: 90vh;
+        min-height: 80vh;
         flex-flow: column nowrap;
     }
     .studio div.full_section div.half_section {
         width: 100%;
-        min-height: 45vh;
-        padding: 1rem;
+        min-height: 40vh;
+        padding: 1.5rem;
+    }
+    div.full_section.row-two {
+        flex-flow: column-reverse nowrap;
     }
     .studio div.full_section div.half_section.mobile_single {
         height: 90vh;
     }
     .studio li {
         max-width: 90%;
-    }
-    .no_mobile {
-        display: none !important;
-    }
-    .no_desktop {
-        display: flex !important;
     }
 }
 
@@ -138,5 +135,11 @@ box-sizing: border-box;
     div.mobile_vid_studio button{
         margin: auto;
         width: 40px;
+    }
+    .no_mobile {
+        display: none !important;
+    }
+    .no_desktop {
+        display: flex !important;
     }
 }
