@@ -210,7 +210,7 @@ background-color: black;
 }
 div.client_box {
 background-color: black;
-margin-bottom: 20%;
+margin-bottom: 20vh;
 }
 div.options div.options_card {
 padding: 1% 15% 0 15%;
@@ -419,9 +419,9 @@ div.why .line_box {
     padding: 30px 14px;
 }
 div.experience_list img {
-    height: 50px;
-    width: 50px;
-    margin: 2%;
+    height: 80px;
+    width: 80px;
+    margin: 0px 4%;
 }
 
 div.options div.options_card {
